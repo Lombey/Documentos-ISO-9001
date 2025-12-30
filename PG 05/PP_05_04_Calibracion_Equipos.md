@@ -1,4 +1,4 @@
-# PP 05 04 - Calibración de Equipos - Rev. 00
+# PP 05 04 - Calibración de Equipos - Rev. 01
 
 ## 1. OBJETIVO
 Definir qué es la calibración del equipo, las etapas y los procedimientos relacionados para los equipos AGDP LINK TOLVA.

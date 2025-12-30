@@ -39,7 +39,7 @@ El servicio de soporte técnico recibe el contacto del cliente por los canales d
      - **Envíos de clientes hacia Corvus:** Si el cliente debe enviar un equipo (ej. tablet), se registra en *ENVÍOS HACIA CORVUS* (vía AppSheet).
 
 **Políticas de Gestión:**
-- **Propiedad de cliente:** La empresa se responsabiliza de los equipos mientras estén en su poder (no durante el tránsito de ida).
+- **Propiedad de cliente:** La empresa se responsabiliza de los equipos mientras estén en su poder (no durante el tránsito de ida o vuelta). Los costos de flete corren por cuenta del cliente.
 - **Garantía:** Tablets (1 año, excepto panel táctil), Cámaras (6 meses). Requiere envío a oficinas de Corvus para revisión.
 - **Cierre del caso:** Se considera cerrado cuando los comprobantes de envío han sido transmitidos al cliente o área correspondiente.
 
@@ -105,4 +105,4 @@ Soporte garantiza la integridad y backup de la información (PG, PP, RPG) confor
 | 19/09/2023 | 04 | Cambios al horario. | Responsable del SGC |
 | 07/10/2024 | 05 | Adecuación 5.2.1.3 e incorporación de RPG 05 03 y 05 04. | Responsable del SGC |
 | 28/10/2024 | 06 | Actualización de políticas de propiedad de cliente. | Responsable del SGC |
-| 10/01/2026 | 07 | Migración a plataforma digital AppSheets. Documentación de módulos (SOPORTE ACTIVOS, PEDIDO DE REPUESTOS, ENVÍOS HACIA CORVUS, INSTRUCTIVOS DE SOPORTE) y su interfaz con registros. Actualización del proceso de registro (5.5) con flujo NUEVO-CERRAR CASO. Incorporación de sección 5.2.3 Procesos administrativos (PP 05 05 y PP 05 06). Actualización de horarios (19:30 hs) y proceso de guardias. | Responsable del SGC |
+| 10/01/2026 | 07 | Migración a plataforma digital AppSheets. Documentación de módulos (SOPORTE ACTIVOS, PEDIDO DE REPUESTOS, ENVÍOS HACIA CORVUS, INSTRUCTIVOS DE SOPORTE) y su interfaz con registros. Actualización del proceso de registro (5.5) con flujo NUEVO-CERRAR CASO. Incorporación de sección 5.2.3 Procesos administrativos (PP 05 05 y PP 05 06). Actualización de horarios (19:30 hs) y proceso de guardias. 5.2.1 incorporacion de costos de flete. | Responsable del SGC |

@@ -1,4 +1,4 @@
-# PP 05 05 - Cobranza de Conectividades
+# PP 05 05 - Cobranza de Conectividades - Rev 01
 
 **Revisión:** 00  
 **Fecha:** 19/06/2025

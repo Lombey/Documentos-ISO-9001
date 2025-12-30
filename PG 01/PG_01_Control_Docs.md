@@ -1,4 +1,4 @@
-# PG 01 - Control de Documentos y Registros - Rev. 05
+# PG 01 - Control de Documentos y Registros - Rev. 06
 
 ## 1. OBJETIVO
 Definir la metodología para la elaboración, revisión, aprobación, distribución, actualización, codificación, control y archivo de todos los documentos y registros de Corvus S.R.L. necesarios para desarrollar la estructura de su Sistema de Gestión de Calidad.
@@ -11,7 +11,7 @@ Para la efectiva aplicación de este procedimiento serán responsables:
 
 **El Responsable del Sistema de Gestión de Calidad** será responsable del cumplimiento e implementación del presente procedimiento, incluyendo elaboración, revisión, aprobación y distribución de los documentos y registros incluidos en el SGC.
 
-**La Dirección** será responsable de la revisión y aprobación de los procedimientos generales y de soporte que elabora el Representante de la Gerencia para el SGC.
+**La Dirección** será responsable de la revisión y aprobación de los procedimientos generales y de soporte que elabora el Responsable del SGC (RSGC).
 
 **Los Encargados** de cada sector serán responsables del cumplimiento del presente procedimiento, incluyendo la elaboración y modificación de los documentos y registros respectivos de sus áreas.
 
@@ -99,6 +99,17 @@ El almacenamiento principal es Google Drive. Se realiza un backup semestral en a
 #### 5.2.7.1 Backup de Whatsapp
 Las conversaciones de soporte de WhatsApp tienen copia de seguridad diaria automática en Google Drive.
 
+#### 5.2.8 Control de Acceso
+El control de acceso a documentos y registros se gestiona mediante permisos en Google Drive:
+
+- **Responsable del SGC (RSGC):** Tiene acceso completo para edición de documentos procedimentales (Manual de Calidad, Procedimientos Generales y Particulares). Es responsable de gestionar los permisos y el control de versiones de estos documentos.
+
+- **Agentes de Soporte:** Tienen acceso limitado a registros, permitiéndoles únicamente la generación de nuevos registros. No tienen permisos para editar la estructura de documentos procedimentales ni modificar registros existentes.
+
+- **Dirección:** Tiene acceso de lectura y aprobación a todos los documentos del SGC.
+
+Los permisos se configuran en Google Drive según el rol y las responsabilidades de cada usuario, asegurando que solo el personal autorizado pueda modificar documentos procedimentales y que los registros sean generados por el personal correspondiente.
+
 ### 6. REGISTROS ASOCIADOS
 | Código | Nombre |
 | --- | --- |
@@ -108,8 +119,9 @@ Las conversaciones de soporte de WhatsApp tienen copia de seguridad diaria autom
 | Fecha | Rev. | Descripción | Responsable |
 | --- | --- | --- | --- |
 | 09/08/2021 | 00 | Documento inicial | Responsable del SGC |
-| 01/03/2022 | 01 | Adición de punto 5.2.7. Inco | Responsable del SGC |
+| 01/03/2022 | 01 | Adición de punto 5.2.7. ARchivo y Backup| Responsable del SGC |
 | 11/11/2022 | 02 | Actualización del punto 5.2.1. Adición del punto 5.2.1.1. Actualización del punto 5.2.3. | Responsable del SGC |
 | 18/11/2022 | 03 | Actualización de 5.2.7 Archivo y back up | Responsable del SGC |
 | 07/10/2024 | 04 | Se actualiza la metodología de backup. Se incorpora el apartado 5.2.7.1. | Responsable del SGC |
 | 08/10/2024 | 05 | Se actualiza Logo. Se actualiza punto 5.2.2. | Responsable del SGC |
+| 04/01/2026 | 06 | Corrección de referencia en sección 3: "Representante de la Gerencia" por "Responsable del SGC (RSGC)". Incorporación de sección 5.2.8 Control de Acceso con especificación de permisos y roles (RSGC, Agentes de Soporte, Dirección). | Responsable del SGC |

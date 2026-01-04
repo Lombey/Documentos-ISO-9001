@@ -237,3 +237,35 @@ strong {
     border-color: #10b981;
 }
 
+
+/* --- VUELTA DE ROSCA: ESTILO EXCLUSIVO PARA CABECERA ISO --- */
+/* Aplica solo a la primera tabla del documento (El Header ISO) */
+
+table:first-of-type {
+    border-collapse: collapse; /* Asegura bordes unidos */
+    margin-top: 0;
+    margin-bottom: 30pt; /* Más aire antes de empezar el documento */
+    border: 2px solid #1e3a5f; /* Marco exterior grueso */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sutil sombra de "tarjeta" */
+}
+
+/* Forzar celdas de cabecera ISO a ser blancas y centradas */
+table:first-of-type td {
+    background-color: #ffffff !important; /* Anula el gris alterno */
+    color: #1e3a5f;
+    border: 1px solid #1e3a5f; /* Bordes internos sólidos del color corporativo */
+    text-align: center !important; /* Centrado perfecto */
+    padding: 10pt; /* Más aire */
+    font-size: 10pt;
+}
+
+/* La primera fila (donde dice PROCEDIMIENTO | CODIGO) */
+table:first-of-type thead th {
+    background-color: #1e3a5f !important; /* Fondo Azul Corvus */
+    color: #ffffff !important; /* Texto Blanco */
+    border: 1px solid #1e3a5f;
+    text-align: center !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10pt;
+}

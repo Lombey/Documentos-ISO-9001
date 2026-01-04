@@ -14,23 +14,31 @@ Este documento detalla las actividades operativas necesarias para cumplir con lo
 | **Enero** | **Auditoría de Registros Digitales:** Verificación de integridad y flujo. | PG 04 | ✅ **Local Listo** |
 | **Enero** | **Gobernanza Estratégica:** Confección de Objetivos 2026 (RPG 02 01). | PG 02 | ✅ **Local Listo** |
 | **Enero** | **Contexto Inicial:** Revisión de FODA y Partes Interesadas (RC 01). | RC 01 | ✅ **Local Listo** |
-| **Enero** | **Comunicación de Cambios:** Notificar nuevas versiones (PG 01-06) al personal. | PG 06 | ⏳ Pendiente |
-| **Febrero** | **Plan de Capacitación 2026:** Definir temáticas anuales (RPG 06 02). | PG 06 | ⏳ Pendiente |
-| **Febrero** | **Validación de Conformidad:** Obtener acuse/conformidad del personal (Forms). | PG 06 | ⏳ Pendiente |
+| **Enero** | **Comunicación de Cambios:** Notificar nuevas versiones (PG 01-06) al personal. (Reg. Conformidad) | PG 06 | ⏳ Pendiente |
+| **Febrero** | **Plan de Capacitación 2026:** Definir temáticas anuales y participantes. | RPG 06 02 | ⏳ Pendiente |
+| **Marzo** | **Capacitación Inducción:** Estructurar contenido mínimo y política de calidad. | PG 06 | ⏳ Pendiente |
+| **Marzo** | **Planif. Auditorías:** Definir fechas tentativas Int/Ext en RPG 04 02. | PG 04 | ⏳ Pendiente |
 | **Q1** | **Migración y Automatización de Soporte:** Despliegue de módulos operativos. | PG 05 | ✅ **Local Listo** |
 | **Abril** | **Revisión Q1 / Top 3 Problemas:** Análisis trimestral de fallas. | PG 03 / RPG 02 02 | ⏳ Pendiente |
+| **Mayo** | **Toma de Conciencia:** Capacitación formal SGC (Política/Objetivos). | RPG 06 05 | ⏳ Pendiente |
+| **Mayo** | **Requerimientos Puestos:** Completar RPG 06 04 (Equipamiento) todos los puestos. | RPG 06 04 | ⏳ Pendiente |
+| **Junio** | **Evidencias Competencia:** Verificar carpeta digital y CVs actualizados. | PG 06 (5.6) | ⏳ Pendiente |
 | **Q2** | **Integración de Series:** Migrar stock de tolvas a AppSheet (Gobernanza Digital). | PP 05 06 | ⏳ Pendiente |
-| **Mayo** | **Evaluación de Proveedores Críticos:** Hosting, Cloud y Repuestos. | RPG 07 01 | ⏳ Pendiente |
-| **Junio** | **Control de Infraestructura:** Inventario y mantenimiento de activos. | PG 08 | ⏳ Pendiente |
 | **Julio** | **Revisión Semestral Estratégica:** Evaluación del ICP y metas de soporte. | RPG 02 01 | ⏳ Pendiente |
 | **Julio** | **Revisión de Contexto:** Actualización de FODA y Partes Interesadas. | RC 01 | ⏳ Pendiente |
-| **Agosto** | **Auditoría de Interfaz:** Verificación de carga única en AppSheet. | PG 04 | ⏳ Pendiente |
-| **Agosto** | **Evaluación Anual de Proveedores:** Completar registro y cierre de ciclo. | RPG 07 01 | ⏳ Pendiente |
-| **Septiembre** | **Acciones de Mejora:** Ajustes derivados de la revisión semestral. | PG 03 | ⏳ Pendiente |
+| **Julio** | **Competencias:** Crear registro consolidado por persona (Brechas). | RPG 06 01 | ⏳ Pendiente |
+| **Agosto** | **Evaluaciones Desempeño 2026:** Completar para 100% personal. | RPG 06 01 | ⏳ Pendiente |
+| **Agosto** | **Análisis Eficacia:** Vincular evaluaciones con Plan de Capacitación. | RPG 06 02 | ⏳ Pendiente |
+| **Agosto** | **Encuesta Post-Capacitación:** Implementar formulario satisfacción (NC #128). | RPG 06 03 | ⏳ Pendiente |
+| **Septiembre** | **Revisión Eficacia Cap.:** Evaluación formal capacitaciones 1º Semestre. | RPG 06 03 | ⏳ Pendiente |
+| **Septiembre** | **Coord. Auditoría Interna:** Confirmar agenda con Auditor Interno. | PG 04 | ⏳ Pendiente |
+| **Septiembre** | **Coord. Auditoría Externa:** Solicitar fecha a Ente Certificador. | PG 04 | ⏳ Pendiente |
 | **Octubre** | **Auditoría Interna Completa:** Verificación de todo el SGC (Pre-Cierre). | PG 04 | ⏳ Pendiente |
-| **Noviembre** | **Encuestas de Satisfacción:** Basadas en módulos de AppSheet. | RPG 02 04 | ⏳ Pendiente |
+| **Octubre** | **Actualización Perfiles:** Revisar RPG 06 01 ante cambios org. | RPG 06 01 | ⏳ Pendiente |
+| **Noviembre** | **Capacitación SGC 2º:** Refuerzo anual y objetivos. | RPG 06 05 | ⏳ Pendiente |
+| **Noviembre** | **Revisión Proceso RRHH:** Evaluar eficacia PG 06 y checklist. | PG 06 | ⏳ Pendiente |
+| **Diciembre** | **Plan 2027:** Planificación capacitaciones próximo año. | RPG 06 02 | ⏳ Pendiente |
 | **Diciembre** | **Revisión por la Dirección:** Informe anual de consolidación digital. | RPG 02 03 | ⏳ Pendiente |
-| **Q3-Q4** | **Digitalización RRHH:** Evaluar migración de Perfiles, Evaluaciones y Capacitaciones. | PG 06 | ⏳ Pendiente |
 
 ---
 

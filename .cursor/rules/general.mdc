@@ -1,0 +1,28 @@
+---
+alwaysApply: false
+---
+1. Configuración del Entorno (Solo una vez)Para que este sistema funcione en Cursor (o VS Code), asegúrate de tener instaladas estas dos extensiones:Markdown PDF: Para convertir tus archivos a PDF profesional.Markdown Preview Enhanced: Para visualizar diagramas y fórmulas en tiempo real.2. Estructura Básica del DocumentoEscribe tu archivo con extensión .md. Utiliza la jerarquía estándar:# Título Principal (Equivalente a Título 1)## Secciones (Equivalente a Título 2)### Subsecciones (Equivalente a Título 3)Negritas: **texto** | Itálicas: *texto*Listas: Usar - o 1.3. Integración de Diagramas (Mermaid)Para incluir diagramas de flujo o procesos sin usar herramientas de dibujo externas, usa bloques de código con la palabra mermaid:Sintaxis básica de un proceso:Markdown```mermaid
+graph TD;
+    A[Inicio del Proceso] --> B{¿Cumple Norma?};
+    B -- Sí --> C[Aprobar Documento];
+    B -- No --> D[Corregir No Conformidad];
+    D --> A;
+Tipos de diagramas recomendados para tu área:graph TD / LR: Diagramas de flujo (arriba-abajo / izquierda-derecha).sequenceDiagram: Interacción entre personas o sistemas (ej. Cliente vs. Soporte).gantt: Cronogramas de auditoría o proyectos.4. Visualización y ExportaciónSigue estos pasos para ver y generar tu documento:AcciónAtajo de Teclado (Windows/Linux)FunciónPrevisualizarCtrl + Shift + VAbre una ventana lateral para ver cómo va quedando el diseño.Exportar a PDFCtrl + Shift + P -> Escribir "Export"Selecciona Markdown PDF: Export (pdf) para generar el archivo final.Configurar EstiloCtrl + , -> Buscar "Markdown PDF Style"Aquí puedes vincular un archivo .css para cambiar fuentes y colores.5. Tips de Calidad (Enfoque ISO 9001)Control de Versiones: Al ser archivos de texto, puedes guardarlos en Git o Drive y ver exactamente qué palabra cambió entre la versión A y la B.Tablas Profesionales: Crea tablas de métricas de atención al cliente fácilmente:Markdown| Métrica | Objetivo | Estado |
+| :--- | :--- | :--- |
+| Tiempo de Respuesta | < 2hs | ✅ |
+| Resolución Nivel 1 | > 85% | ⚠️ |
+Encabezados Automáticos: En los ajustes de la extensión Markdown PDF, activa el "Header Template" para que cada página incluya el logo de la empresa y el nombre del documento automáticamente.6. Ejemplo de Plantilla Lista para UsarCopia y pega esto en un archivo nuevo para probar:Markdown# Reporte de Gestión de Calidad - ISO 9001
+**Fecha:** 2025-10-25  
+**Responsable:** Martín
+
+---
+
+## 1. Flujo de Atención al Cliente
+Este diagrama describe el protocolo actual:
+
+```mermaid
+graph LR
+    C[Cliente] --> S[Soporte]
+    S --> R{¿Resuelto?}
+    R -- No --> G[Gerencia]
+    R -- Sí --> F[Cierre]

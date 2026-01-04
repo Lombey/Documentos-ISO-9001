@@ -1,0 +1,239 @@
+/* Estilos para Markdown PDF - Diseño Profesional y Corporativo */
+
+/* Configuración general de página para impresión */
+@page {
+    margin: 2.5cm 2cm;
+    size: A4;
+}
+
+/* Fuente sans-serif limpia y profesional */
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.6;
+    color: #333333;
+    background-color: #ffffff;
+}
+
+/* Títulos H1 - Azul oscuro */
+h1 {
+    color: #1e3a5f;
+    font-size: 24pt;
+    font-weight: 600;
+    margin-top: 30pt;
+    margin-bottom: 15pt;
+    page-break-after: avoid;
+    border-bottom: 2px solid #1e3a5f;
+    padding-bottom: 8pt;
+}
+
+/* Títulos H2 - Azul oscuro */
+h2 {
+    color: #1e3a5f;
+    font-size: 18pt;
+    font-weight: 600;
+    margin-top: 25pt;
+    margin-bottom: 12pt;
+    page-break-after: avoid;
+}
+
+/* Títulos H3 */
+h3 {
+    color: #2c5282;
+    font-size: 14pt;
+    font-weight: 600;
+    margin-top: 20pt;
+    margin-bottom: 10pt;
+    page-break-after: avoid;
+}
+
+/* Títulos H4-H6 */
+h4, h5, h6 {
+    color: #2c5282;
+    font-weight: 600;
+    margin-top: 15pt;
+    margin-bottom: 8pt;
+    page-break-after: avoid;
+}
+
+/* Párrafos */
+p {
+    margin-top: 8pt;
+    margin-bottom: 8pt;
+    text-align: justify;
+}
+
+/* Listas */
+ul, ol {
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    padding-left: 25pt;
+}
+
+li {
+    margin-bottom: 5pt;
+}
+
+/* Tablas - Bordes finos y filas alternas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15pt;
+    margin-bottom: 15pt;
+    font-size: 10pt;
+    page-break-inside: avoid;
+}
+
+/* Encabezados de tabla */
+thead {
+    background-color: #1e3a5f;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 10pt 12pt;
+    text-align: left;
+    font-weight: 600;
+    border: 1px solid #1e3a5f;
+}
+
+/* Celdas de tabla */
+tbody td {
+    padding: 8pt 12pt;
+    border: 1px solid #d1d5db;
+}
+
+/* Filas alternas - Gris claro */
+tbody tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+/* Hover en filas (para visualización en pantalla) */
+tbody tr:hover {
+    background-color: #e5e7eb;
+}
+
+/* Código inline */
+code {
+    background-color: #f3f4f6;
+    padding: 2pt 4pt;
+    border-radius: 3pt;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 10pt;
+    color: #c7254e;
+}
+
+/* Bloques de código */
+pre {
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 4pt;
+    padding: 12pt;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    overflow-x: auto;
+    page-break-inside: avoid;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    color: #333333;
+}
+
+/* Citas */
+blockquote {
+    border-left: 4px solid #1e3a5f;
+    margin-left: 0;
+    padding-left: 15pt;
+    color: #4a5568;
+    font-style: italic;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+}
+
+/* Enlaces */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15pt;
+    margin-bottom: 15pt;
+    page-break-inside: avoid;
+}
+
+/* Saltos de página */
+.page-break {
+    page-break-before: always;
+}
+
+/* Evitar saltos de página en elementos importantes */
+h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+}
+
+/* Encabezado y pie de página (si se usan) */
+.header {
+    text-align: center;
+    color: #1e3a5f;
+    font-size: 10pt;
+    margin-bottom: 20pt;
+}
+
+.footer {
+    text-align: center;
+    color: #6b7280;
+    font-size: 9pt;
+    margin-top: 20pt;
+}
+
+/* Separadores horizontales */
+hr {
+    border: none;
+    border-top: 1px solid #d1d5db;
+    margin: 20pt 0;
+}
+
+/* Texto resaltado */
+strong {
+    font-weight: 600;
+    color: #1e3a5f;
+}
+
+/* Notas y advertencias */
+.note, .warning, .info {
+    padding: 10pt 15pt;
+    margin: 15pt 0;
+    border-radius: 4pt;
+    border-left: 4px solid;
+    page-break-inside: avoid;
+}
+
+.note {
+    background-color: #eff6ff;
+    border-color: #2563eb;
+}
+
+.warning {
+    background-color: #fef3c7;
+    border-color: #f59e0b;
+}
+
+.info {
+    background-color: #f0fdf4;
+    border-color: #10b981;
+}
+

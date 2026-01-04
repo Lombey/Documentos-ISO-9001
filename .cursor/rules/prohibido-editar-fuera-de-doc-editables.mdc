@@ -1,0 +1,5 @@
+---
+alwaysApply: true
+---
+Los unicos documentos que puedes editar son los incluidos en la carpeta docs_editables y subcarpetas. Todos los demas tienes terminantemente prohibido editarlos, el riesgo es muy grande. Por ejemplo GEMINI.MD, no lo puedes editar porque está en la raiz del repo.
+Ignora los archivos .pdf, no tienes que usarlos.

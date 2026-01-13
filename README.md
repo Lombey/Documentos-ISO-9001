@@ -34,13 +34,15 @@ Para que el Agente IA pueda localizar rápidamente los recursos en la nube:
 | :--- | :--- | :--- | :--- |
 | **RPG 01 01** - Listado Maestro | `DOC-MASTER` | [Abrir Sheet](https://docs.google.com/spreadsheets/d/17YuUd3VHcJlKZW4zAEyWULkr5AfC9ShE0x93L3j6L-c/edit) | 🟢 Consultas |
 | **RC 01** - FODA y Riesgos | `RISK-MATRIX` | [Abrir Sheet](https://docs.google.com/spreadsheets/d/1UPYN3m3OMcOV5lVO-muEzGOWVU7sBeY1JSxeXlT6Wos/edit) | 🟢 Gestión Riesgos |
-| **RPG 02 06** - Plan AppSheet | `CHANGE-PLAN` | [Abrir Doc](https://docs.google.com/document/d/1RFDxisHbicmKYGVRKIwee767vHWoixBWs8iHi5Fz5oE/edit) | 🟡 Documento |
 | **RPG 03 01** - No Conformidades | `NC-DB` | [Abrir Sheet](https://docs.google.com/spreadsheets/d/1QOJrJKMXYAQfQdtXeLseF2S7sAIUecGbNvxyRO7tgJg/edit) | 🟡 En Desarrollo |
 | **RPG 04 02** - Auditorías | `AUDIT-DB` | [Abrir Sheet](https://docs.google.com/spreadsheets/d/13uA5Z9MIvkpWr-9uU0Aa40xQ6xbIngeg0lqsPfPFRDU/edit) | 🟢 Unificado |
 | **RPG 06 01** - Perfiles Puesto | `HR-PROFILE` | [Abrir Sheet](https://docs.google.com/spreadsheets/d/1Ft-pljYbck1HQLXCNMgm-qLzPTM93c0IygA5pIXEwnk/edit) | 🟢 Consulta |
 | **RPG 06 06** - Capacitaciones | `TRAINING-DB` | [Abrir Sheet](https://docs.google.com/spreadsheets/d/1f7wU-1QaOqIkNA0xJXzUqHa-Du7bjcMDiT6qcXl3jIA/edit) | 🟢 Unificado |
 | **RPG 07 01** - Proveedores | `SUPPLIER-DB` | [Abrir Sheet](https://docs.google.com/spreadsheets/d/134bLqdzPPXD5ovYBJhaoexX8A7YeA-d8csxGlV587ek/edit) | 🟢 Agenda |
+| **RPG 02 06 (Master)** - Plan SGC | CHANGE-PLAN-SGC | [Abrir Doc](https://docs.google.com/document/d/1RFDxisHbicmKYGVRKIwee767vHWoixBWs8iHi5Fz5oE/edit) | 🟡 Maestro |
+| **RPG 02 06 (Soporte)** - Plan Soporte | CHANGE-PLAN-SOP | [Abrir Doc](https://docs.google.com/document/d/1RFDxisHbicmKYGVRKIwee767vHWoixBWs8iHi5Fz5oE/edit) | 🟡 Derivado |
 | **RPG 05 02** - Instructivos | `KNOWLEDGE-DB`| [Abrir Sheet](https://docs.google.com/spreadsheets/d/133Y0vlIAEvXIgWBv5Dkf9UnatM7Ru8uo/edit) | 🟢 Soporte |
+| **CRONOGRAMA** - Táctico 2026 | `CRONO-DB` | [Abrir Sheet](https://docs.google.com/spreadsheets/d/1pdjYjpG5xKidUxjdq8qPTSE41xhiFWLjRoOoBbkhJQg/edit) | 🟡 En AppSheet |
 
 ---
 
@@ -49,12 +51,11 @@ Para que el Agente IA pueda localizar rápidamente los recursos en la nube:
 1. **Auditorías Unificadas:** Se depreca `RPG 04 01`. Todo vive en `RPG 04 02` (Planificación + Historial).
 2. **Capacitación Integral:** Se deprecan `RPG 06 02` y `03`. Nace `RPG 06 06` para gestión 360°.
 3. **Modernización RRHH:** Se divide `RPG 06 01` (Perfil Estático) de `RPG 06 07` (Evaluación Dinámica).
-4. **Plan Maestro:** Se aprueba el `RPG_02_06_Plan_Migracion_AppSheet.md` como hoja de ruta.
+4. **Plan Maestro:** Se aprueba el `RPG 02 06 Plan Migracion SGC.md` como hoja de ruta principal y el `RPG 02 06 Plan Migracion Soporte.md` como sub-operación.
 
 ---
 
 ## 📂 Organización Local
 
-* `/docs_editables`: Código fuente Markdown de los procedimientos.
 * `/CRONOGRAMA_SGC_2026.md`: Tablero táctico de hitos.
 * `/README.md`: Este archivo (Mapa de navegación).

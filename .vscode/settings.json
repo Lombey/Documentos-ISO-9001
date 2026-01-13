@@ -11,5 +11,7 @@
     "markdown-pdf.format": "A4",
     "markdown-pdf.styles": [
         "${workspaceFolder}/reporte-estilo.css"
-    ]
+    ],
+    "workbench.preferredDarkColorTheme": "Tomorrow Night Blue",
+    "editor.fontSize": 22
 }

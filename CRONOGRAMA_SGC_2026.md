@@ -1,3 +1,11 @@
+---
+google_drive_id: "1pdjYjpG5xKidUxjdq8qPTSE41xhiFWLjRoOoBbkhJQg"
+revision: "04"
+last_updated: "13/01/2026"
+responsible: "RSGC"
+audit_ready: true
+---
+
 # Cronograma Táctico SGC Corvus 2026 (Alineado a Estrategia Rev. 04)
 
 Este documento detalla las actividades operativas necesarias para cumplir con los **Objetivos Estratégicos 2026** (RPG 02 01), enfocados en la digitalización total y la eficiencia del soporte.

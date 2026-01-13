@@ -13,7 +13,7 @@ Este repositorio es el espacio de trabajo local para la gestión documental y t�
 * **Flux:** `Local (.md)` ➡️ `PDF` ➡️ `Google Drive`.
 * **Dónde se edita:** Aquí, en local (`/docs_editables`).
 * **Despliegue:** El usuario (RSGC) revisa el Markdown local y, tras aprobarlo, genera el PDF para subirlo manualmente al Drive.
-* **Rol de la IA:** Escribir, corregir y mejorar los `.md` locales.
+* **Rol de la IA:** Escribir, corregir y mejorar los `.md` locales siguiendo estrictamente el [Protocolo R-DOC-IA](./docs_editables/PG%2001/R-DOC-IA%20Reglas%20de%20Documentacion%20IA.md).
 
 ### 2. Registros (RPG / RC) - Bases de Datos
 

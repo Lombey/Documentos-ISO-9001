@@ -8,7 +8,7 @@
 
 /* Fuente sans-serif limpia y profesional */
 body {
-    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    font-family: 'Segoe UI Emoji', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
     font-size: 11pt;
     line-height: 1.6;
     color: #333333;
@@ -289,3 +289,81 @@ table:first-of-type thead th {
     letter-spacing: 1px;
     padding: 10pt;
 }
+
+/* --- ESTILOS PARA CHECKBOXES (Task Lists) --- 
+   Imita el estilo visual de VS Code para que el PDF se vea igual al Preview */
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.1em;
+    height: 1.1em;
+    border: 1px solid #6b7280;
+    border-radius: 3px;
+    margin-right: 0.5em;
+    vertical-align: text-bottom;
+    position: relative;
+    outline: none;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #10b981;
+    /* Verde "Preview" (Emerald) */
+    border-color: #10b981;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 900;
+    font-size: 0.9em;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1;
+}
+
+/* --- CLASES PARA REEMPLAZAR EMOJIS (Simulación Vectorial para PDF) --- */
+.iso-check {
+    display: inline-block;
+    width: 1.1em;
+    /* Reduje apenas el tamaño para que no compita con el texto */
+    height: 1.1em;
+    background-color: #10b981;
+    /* Verde Éxito */
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 800;
+    /* Un poco menos grueso para nitidez */
+    line-height: 1.1em;
+    margin-right: 6px;
+    /* Un poco más de aire */
+    font-size: 0.9em;
+    vertical-align: middle;
+    /* Alineación al medio real */
+    position: relative;
+    top: -1px;
+    /* Pequeño ajuste óptico hacia arriba */
+}
+
+.iso-cross {
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    background-color: #ef4444;
+    /* Rojo Error */
+    color: #ffffff;
+    text-align: center;
+    border-radius: 4px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 800;
+    line-height: 1.1em;
+    margin-right: 6px;
+    font-size: 0.9em;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organigrama Corvus S.R.L.</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <style>
+        body { font-family: sans-serif; padding: 20px; text-align: center; }
+        h1 { color: #333; }
+        .leyenda { margin-bottom: 20px; font-size: 0.9em; color: #555; }
+        .badge { display: inline-block; padding: 5px 10px; color: white; border-radius: 4px; font-weight: bold; margin: 0 5px; }
+        .sgc { background-color: #60a917; border: 2px solid #2D7600; }
+        .out { background-color: #1ba1e2; border: 2px solid #006EAF; }
+    </style>
+</head>
+<body>
+    <h1>Organigrama Corvus S.R.L. (Rev. 07)</h1>
+    
+    <div class="leyenda">
+        <span class="badge sgc">Verde: Alcance SGC</span>
+        <span class="badge out">Azul: Fuera de Alcance</span>
+        <span>(Borde Punteado = Externo/Freelance)</span>
+    </div>
+
+    <div class="mermaid">
+        graph TD
+            %% Definición de Estilos
+            classDef sgc fill:#60a917,stroke:#2D7600,color:#ffffff,stroke-width:2px,font-weight:bold;
+            classDef out fill:#1ba1e2,stroke:#006EAF,color:#ffffff,stroke-width:2px,font-weight:bold;
+            classDef external stroke-dasharray: 5 5;
+
+            %% Nivel 1: Dirección y Staff
+            DIR[DIRECCIÓN]:::sgc
+            
+            %% Staff (Conectados a Dirección)
+            RSGC[RSGC]:::sgc
+            CONT[CONTADURÍA]:::out
+            
+            %% Aplicar estilo externo a Staff
+            class RSGC,CONT external
+
+            %% Nivel 2: Departamentos Operativos
+            VENT[VENTAS]:::out
+            COMP[COMPRAS]:::sgc
+            DES[DESARROLLO]:::out
+            RSOP[RESPONSABLE DE SOPORTE]:::sgc
+            PROD[ARMADO Y PRODUCCIÓN]:::out
+
+            %% Nivel 3: Sub-áreas
+            TEST[TESTING]:::out
+            ASOP[AGENTE SOPORTE]:::sgc
+
+            %% Relaciones
+            
+            %% Dirección supervisa a Staff
+            DIR --- RSGC
+            DIR --- CONT
+
+            %% Dirección supervisa áreas operativas
+            DIR --> VENT
+            DIR --> COMP
+            DIR --> DES
+            DIR --> RSOP
+            DIR --> PROD
+
+            %% Relaciones Jerárquicas
+            DES --> TEST
+            RSOP --> ASOP
+    </div>
+</body>
+</html>

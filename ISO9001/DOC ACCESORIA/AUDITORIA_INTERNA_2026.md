@@ -78,7 +78,7 @@ estado: "EN_PROGRESO"
 
 | # | Origen | Pendiente | A revisar en |
 | :--- | :--- | :--- | :--- |
-| V-01 | PG 01 s.5.2.6 | Evidencia de consultas mensuales a documentos externos | PG 01 / Drive |
+| ~~V-01~~ | ~~PG 01~~ | ~~Evidencia de consultas mensuales a documentos externos~~ | ✅ Verificado — único doc externo es ISO 9001:2015, sin revisiones desde emisión. Trackeado en RPG 01 01. |
 | ~~V-02~~ | ~~PG 06~~ | ~~Registro de comunicación a freelancers~~ | ❌ Descartado — premisa incorrecta, freelancers no verificados en el SGC |
 | ~~V-03~~ | ~~PG 02~~ | ~~Histórico de KPIs por temporada~~ | ✅ Verificado — valores de cierre se archivan en RPG 02 02 |
 

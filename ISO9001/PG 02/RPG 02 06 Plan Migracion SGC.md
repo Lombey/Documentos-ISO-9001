@@ -99,5 +99,5 @@ El cambio incluye la reestructuración de registros clave:
 
 | Rol | Nombre | Fecha | Firma / Resultado |
 | :--- | :--- | :--- | :--- |
-| **Revisión (RSGC)** | [Nombre RSGC] | 04/01/2026 | ☑ Aprobado <br> ☐ Rechazado |
-| **Dirección** | [Nombre Director] | 04/01/2026 | ☑ Aprobado <br> ☐ Rechazado |
+| **Revisión (RSGC)** | Martín Lombardi | 04/01/2026 | ☑ Aprobado <br> ☐ Rechazado |
+| **Dirección** | Mariano Oddino | 04/01/2026 | ☑ Aprobado <br> ☐ Rechazado |

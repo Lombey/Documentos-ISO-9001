@@ -108,6 +108,7 @@ responsible: "RSGC"
 - **Ubicación:** Al final del documento
 - **Regla:** UNA línea por día de trabajo
 - **Ediciones múltiples mismo día:** Concatenar con punto y coma (`;`)
+- **Descripción:** Nombrar el *tipo* de cambio, no cada instancia. "Corrección de nombres de columna" es suficiente — no enumerar cada nombre.
 
 | Fecha | Rev. | Descripción | Responsable |
 |-------|------|-------------|-------------|
@@ -156,9 +157,16 @@ Plantillas: PG, PP, RPG, RC, IT
 
 ## Perfil del Usuario
 
-- **Pragmatismo operativo:** Valora estructura que da cobertura ante auditoría
-- **Filosofía "Hacker" de la Norma:** Buscar la "holgura legal" en lugar de adaptar el trabajo a la norma rígida. La norma debe trabajar para el usuario, no al revés.
-- **Estilo directo:** Prefiere checklists simples sobre tablas complejas
-- **Consultivo pero decisivo:** Conversar antes de implementar, pero decide rápido una vez definido
-- **Honestidad:** Prefiere juicio crítico sobre validación automática de ideas
-- **Restricción clave:** No editar sin consultar cuando hay toma de decisiones involucrada
+- **Ing. Industrial:** Entiende que los procedimientos dan consistencia de outcome. ISO no es una formalidad — es un sistema de mejora continua. Un KPI no accionable no aporta, independientemente de cuántos haya.
+- **Triple rol:** Es usuario final, Responsable del Área y RSGC al mismo tiempo. Lee los documentos con los ojos de quien los ejecuta, no de quien los escribe.
+- **Precisión sin puntillosidad:** Los nombres exactos (vistas, columnas, estados AppSheet) importan porque la ambigüedad tiene costo real — comentarios en auditoría y dificultad de mapeo.
+- **Estilo directo:** Prefiere síntesis sobre exhaustividad. Más datos no es mejor información.
+- **Consultivo pero decisivo:** Conversar antes de implementar, pero decide rápido una vez definido.
+- **Honestidad:** Prefiere juicio crítico sobre validación automática de ideas.
+- **Restricción clave:** No editar sin consultar cuando hay toma de decisiones involucrada.
+
+### Reglas sobre Procedimientos
+
+- El texto debe habilitar la acción correcta en el momento correcto — no solo describir el proceso. Verificar desde la perspectiva del usuario que ejecuta.
+- Los KPIs deben ser accionables. Proponer indicadores que cierren el ciclo de mejora, no métricas decorativas.
+- Usar siempre los nombres exactos de vistas, columnas y módulos de AppSheet tal como aparecen en el sistema.

@@ -1,23 +1,23 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "06"
-last_updated: "13/01/2026"
+revision: "08"
+last_updated: "24/02/2026"
 responsible: "RSGC"
 iso_clause: "5.1, 9.3"
 audit_ready: true
 tags: ["direccion", "liderazgo", "revision", "politica"]
 ai_brief: "Procedimiento que define las responsabilidades de la Dirección, incluyendo la política de calidad y la revisión del SGC."
-pending_actions: ["Cronograma de revisión por la dirección 2026"]
+pending_actions: []
 ---
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# PG 02 - Dirección - Rev. 06
+# PG 02 - Dirección - Rev. 07
 
 | PROCEDIMIENTO | PG 02 |
 | :--- | :--- |
-| **DIRECCIÓN** | **Rev. 06** |
-| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 11/01/2026 |
+| **DIRECCIÓN** | **Rev. 08** |
+| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 24/02/2026 |
 | **Elabora:** RSGC | **Revisa y Aprueba:** Dirección |
 
 ## 1. OBJETIVO
@@ -78,9 +78,31 @@ La Dirección designa al Responsable del SGC, quien tendrá autoridad y responsa
 
 La Dirección identifica mediante un análisis de **FODA** el contexto que afecta a la organización. Aquellos factores FODA que no guarden relación con los objetivos estratégicos no serán incluidos en el *RPG 02 01 - Objetivos Estratégicos*. El análisis FODA se revisará anualmente.
 
+### 5.3.1 Gestión de Riesgos y Oportunidades
+
+Los factores del FODA que puedan impactar en la capacidad del SGC de lograr sus resultados previstos se identifican y gestionan como riesgos y oportunidades, conforme a la cláusula 6.1 de la norma. Se documentan en el registro *RC 01 - Abordaje de Riesgos y Oportunidades*.
+
+**Ciclo de revisión:** La revisión principal se realiza en la planificación anual (enero/febrero), en conjunto con la actualización del FODA y los objetivos. El RSGC puede incorporar nuevas entradas en cualquier momento del año si identifica un riesgo u oportunidad emergente.
+
+**Evaluación:** Cada entrada se evalúa mediante la matriz **P×I** (Probabilidad × Impacto), obteniendo un nivel de riesgo:
+
+- **Bajo** (1–4): Aceptable — monitoreo pasivo.
+- **Medio** (5–14): Requiere acción definida con plazo y responsable.
+- **Alto** (15–25): Requiere acción inmediata.
+
+**Estados posibles:**
+
+- **Vigente:** Activo, con seguimiento en curso.
+- **Fuera de alcance:** Identificado pero excluido del SGC, registrado para trazabilidad.
+- **Cerrado:** Riesgo resuelto o desaparecido.
+
+**Eficacia de las acciones:** Se evalúa en las dos instancias de revisión del ciclo anual: la planificación estratégica (enero/febrero) y la Revisión por la Dirección (julio/septiembre). Los valores estandarizados son: `Eficaz` / `Ineficaz` / `Parcialmente eficaz` / `Sin datos` / `—`. Para riesgos **Vigentes** la evaluación es un snapshot a la fecha de revisión y no implica cierre del riesgo. Para riesgos **Cerrados** es definitiva.
+
+**Responsabilidades:** El RSGC gestiona el registro y puede incorporar nuevas entradas. La Dirección o el RSGC pueden modificar el estado a *Cerrado* o *Fuera de alcance*. La eficacia de las acciones constituye una entrada obligatoria a la Revisión por la Dirección (punto 5.7).
+
 ### 5.4 Partes interesadas, sus necesidades y expectativas
 
-La Dirección identifica las partes interesadas y utiliza sus necesidades y expectativas para determinar las entradas y salidas de los procesos del SGC.
+La Dirección identifica las partes interesadas y utiliza sus necesidades y expectativas para determinar las entradas y salidas de los procesos del SGC. Las partes interesadas y sus necesidades se documentan en el **Manual de Calidad (MGC)**.
 
 ### 5.5 Política de Calidad
 
@@ -97,11 +119,22 @@ Para los procesos de soporte, el seguimiento y medición de estos indicadores se
 
 ### 5.7 Revisión por la Dirección
 
-Se realiza al menos una vez al año.
+Se realiza al menos una vez al año, preferentemente entre julio y septiembre, al cierre de la temporada de trabajo (Cosecha/Siembra). Este momento concentra la información necesaria para una revisión completa del desempeño del período.
+
+La planificación del ciclo siguiente se realiza en enero/febrero mediante la actualización de *RPG 02 01* y *RPG 02 02*.
 
 #### 5.7.1 Información para la revisión
 
-Incluye: estado de acciones previas, cambios en contexto, desempeño del SGC (satisfacción del cliente, objetivos, no conformidades, auditorías, proveedores), adecuación de recursos y eficacia de acciones para riesgos.
+Incluye: estado de acciones previas, cambios en contexto, desempeño del SGC (satisfacción del cliente, objetivos, no conformidades, auditorías), adecuación de recursos y eficacia de acciones para riesgos.
+
+Las entradas del cierre de temporada incluyen:
+
+- **Objetivos estratégicos:** revisión de *RPG 02 01*.
+- **KPIs de soporte:** resultados del período registrados en *RPG 02 02* (Dashboard de Gestión — *PG 05*).
+- **Evaluación de proveedores:** *RPG 07 01 - Listado y Evaluación de Proveedores*.
+- **Mantenimiento de infraestructura:** *RPG 08 02 - Registro de Mantenimiento*.
+- **Gestión de capacitaciones:** *RPG 06 06 - Gestión Integral Capacitaciones*.
+- **Evaluaciones de desempeño:** *RPG 06 07 - Evaluaciones de Desempeño*.
 
 #### 5.7.2 Resultados de la revisión
 
@@ -128,6 +161,11 @@ El Responsable del SGC comunica novedades del *PG 05 Post Venta* o del Manual de
 | RPG 02 03 | Minuta de Reunión |
 | RPG 02 04 | Encuesta de satisfacción de clientes |
 | RPG 02 06 | Control de cambios |
+| RPG 06 05 | Registro de Comunicación |
+| RPG 06 06 | Gestión Integral Capacitaciones |
+| RPG 06 07 | Evaluaciones de Desempeño |
+| RPG 07 01 | Listado y Evaluación de Proveedores |
+| RPG 08 02 | Registro de Mantenimiento |
 
 ## 7. HISTORIAL DE CAMBIOS
 
@@ -136,8 +174,9 @@ El Responsable del SGC comunica novedades del *PG 05 Post Venta* o del Manual de
 | 09/08/2021 | 00 | Documento inicial | RSGC |
 | 06/12/2021 | 01 | Adición punto 5.7.3, actualización frecuencia de Rev. por Dir. | RSGC |
 | 14/05/2022 | 02 | Actualización FODA, adición puntos 5.8 y 5.10. | RSGC |
-| 10/11/2022 | 03 | Actualización relacionada a RPG 02 05. | RSGC |
+| 10/11/2022 | 03 | Actualización relacionada a RPG 02 05 (obsoleto, reemplazado por RPG 02 02). | RSGC |
 | 07/10/2024 | 04 | Frecuencia FODA, periodicidad revisión, incorporación RPG 02 06, unificación de registros. | RSGC |
 | 28/10/2024 | 05 | Actualiza punto 5.6 objetivos de calidad. | RSGC |
 | 11/01/2026 | 06 | Adición de definiciones y abreviaturas (4). Integración de Dashboards para el monitoreo de objetivos de proceso (5.6). Modernización digital del proceso de satisfacción del cliente (5.8) mediante AppSheet y encuestas online. | RSGC |
-| 13/01/2026 | 07 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 24/02/2026 | 07 | Actualización 5.7: ventana temporal de revisión (julio-septiembre), ciclo de planificación (enero-febrero), entradas del cierre de temporada; incorporación RPG 06 05 en registros asociados; aclaración RPG 02 05 obsoleto. | RSGC |
+| 24/02/2026 | 08 | Incorporación de sección 5.3.1 Gestión de Riesgos y Oportunidades: ciclo de revisión, matriz P×I, estados, valores estandarizados de eficacia y responsabilidades. Cierra gap normativo cláusula 6.1. | RSGC |

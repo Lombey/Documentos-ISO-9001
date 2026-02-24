@@ -1,7 +1,7 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "04"
-last_updated: "13/01/2026"
+revision: "05"
+last_updated: "24/02/2026"
 responsible: "RSGC"
 iso_clause: "7.1.5, 9.1"
 audit_ready: true
@@ -331,7 +331,7 @@ KPI de eficiencia en la resolución de tickets de soporte.
 ### 4.1. Tiempo de Resolución (Transaccional)
 
 **Qué hace:** Calcula las horas transcurridas desde el inicio hasta el cierre (o hasta ahora si sigue abierto).
-**Nombre columna:** `TIEMPO RESOLCION`
+**Nombre columna:** `TIEMPO RESOLUCION`
 **Tabla:** `Soporte` (Columna Virtual)
 **Tipo:** `Decimal`
 **Fórmula:**
@@ -351,7 +351,7 @@ TOTALHOURS(IF(ISBLANK([CIERRE DEL CASO]), NOW(), [CIERRE DEL CASO]) - [INICIO DE
 ```appsheet
 AVERAGE(
   SELECT(
-    Soporte[TIEMPO RESOLCION],
+    Soporte[TIEMPO RESOLUCION],
     AND(
       ISNOTBLANK([CIERRE DEL CASO]),
       MONTH([CIERRE DEL CASO]) = MONTH(TODAY()),
@@ -372,7 +372,7 @@ AVERAGE(
 ```appsheet
 AVERAGE(
   SELECT(
-    Soporte[TIEMPO RESOLCION],
+    Soporte[TIEMPO RESOLUCION],
     AND(
       ISNOTBLANK([CIERRE DEL CASO]),
       YEAR([CIERRE DEL CASO]) = YEAR(TODAY())
@@ -518,7 +518,7 @@ Estos indicadores miden si la asistencia técnica "educa" al cliente para reduci
 
 **Qué hace:** Mide el porcentaje de asistencias exitosas MENSUAL. Es exitoso si el cliente NO re-contacta en 15 días."
 
-**Nombre columna:** `PROMEDIO EFECTIVIDAD INTRUCTIVOS MENSUAL`
+**Nombre columna:** `PROMEDIO EFECTIVIDAD INSTRUCTIVOS MENSUAL`
 **Tabla:** `METRICAS POST VENTA` (Columna Virtual)
 **Tipo:** `Percent`
 **Fórmula:**
@@ -582,7 +582,7 @@ MAX(LIST(1,
 
 **Qué hace:** Mide el éxito de casos catalogados como "CAPACITACIÓN". Es exitoso si el cliente NO re-contacta en 15 días.
 
-**Nombre columna:** `PROMEDIO EFICACIA CAPACITACION MENSUAL`
+**Nombre columna:** `PROMEDIO EFECTIVIDAD CAPACITACION MENSUAL`
 **Tabla:** `METRICAS POST VENTA` (Columna Virtual)
 **Tipo:** `Percent`
 **Fórmula (MENSUAL):**
@@ -698,7 +698,7 @@ Instrucciones para la configuración visual en AppSheet (`METRICAS POST VENTA` y
 ### 6.4. Soporte Técnico (SLA)
 
 * **Ticket Fuera de SLA (Fila):**
-  * **Condition:** `[TIEMPO RESOLCION] > 12`
+  * **Condition:** `[TIEMPO RESOLUCION] > 12`
   * **Format:** Texto Rojo + Icono Warning 🔴.
 * **PROMEDIO MENSUAL DENTRO DE SLA:**
   * **Condition:** `[PROMEDIO RESOLUCION MENSUAL] <= 12`
@@ -797,3 +797,4 @@ IFS(
 | 00 | 11/01/2026 | Emisión inicial. | RSGC |
 | 01-03 | 12/01/2026 | Actualización de KPIs. | RSGC |
 | 04 | 13/01/2026 | **Biblioteca Central:** Incorporación de fórmulas de CUIT y Lógica de Estado (NC). Estandarización de encabezados digitales y trazabilidad normativa. | RSGC |
+| 05 | 24/02/2026 | Corrección de nombres de columna. | RSGC |

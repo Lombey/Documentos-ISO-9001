@@ -1,7 +1,7 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "11"
-last_updated: "13/01/2026"
+revision: "13"
+last_updated: "24/02/2026"
 responsible: "RSGC"
 iso_clause: "All"
 audit_ready: true
@@ -109,7 +109,16 @@ Esta política proporciona el marco para establecer los objetivos de calidad y s
 
 ## 5. GESTIÓN DE RIESGOS Y OPORTUNIDADES
 
-La Dirección identifica y gestiona los riesgos y oportunidades que afectan la capacidad del SGC mediante el análisis FODA y evaluación documentada en **RC 01 - Análisis FODA y Evaluación de Riesgos y Oportunidades**. La gestión de riesgos y oportunidades se integra con la planificación de objetivos y la revisión por la dirección, asegurando que se tomen acciones apropiadas para abordar aquellos que puedan impactar en la capacidad del SGC para lograr sus objetivos y resultados previstos.
+La organización identifica y gestiona los riesgos y oportunidades que pueden afectar la capacidad del SGC de lograr sus resultados previstos, conforme a la cláusula 6.1 de la norma.
+
+**Identificación:** Los riesgos y oportunidades se identifican a partir del análisis de contexto (RC 01 - FODA), las necesidades de las partes interesadas y la operación del SGC. Se evalúan mediante una matriz Probabilidad × Impacto que determina su nivel (Bajo / Medio / Alto) y la acción de respuesta.
+
+**Ciclo de revisión:** La gestión se realiza en dos instancias del ciclo anual:
+
+- **Planificación estratégica (enero/febrero):** incorporación de nuevas entradas y actualización de acciones para el período siguiente.
+- **Revisión por la Dirección (julio/septiembre):** evaluación de la eficacia de las acciones del período.
+
+**Registro:** Las entradas, acciones y evaluación de eficacia se documentan en **RC 01 - Abordaje de Riesgos y Oportunidades**. La metodología detallada se define en **PG 02 - Dirección (sección 5.3.1)**.
 
 ---
 
@@ -199,3 +208,4 @@ A continuación se listan los Procedimientos Generales (PG) del Sistema de Gesti
 | 31/12/2025 | 10 | Incorporación de descripción del Responsable del SGC (RSGC) en sección 3.1. Ampliación de sección 9 con referencia a RPG 01 01 para listado completo de documentos. Adición de descripción de interrelaciones entre procesos del SGC en sección 3.2. | RSGC |
 | 04/01/2026 | 11 | Estandarización de formato de referencias a documentos con guión (PG 02 - Dirección). Ampliación de sección 5 (Gestión de Riesgos) con descripción de integración con planificación. Adición de referencia a proceso de satisfacción del cliente en sección 8.2. | RSGC |
 | 13/01/2026 | 12 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 24/02/2026 | 13 | Expansión de sección 5 (Gestión de Riesgos y Oportunidades): fuentes de identificación, ciclo de dos instancias (planificación y revisión por la dirección), referencia a metodología en PG 02 sección 5.3.1. | RSGC |

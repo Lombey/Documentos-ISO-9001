@@ -16,7 +16,7 @@ pending_actions: []
 
 | PROCEDIMIENTO | PG 05 |
 | :--- | :--- |
-| **POST VENTA (SOPORTE TÉCNICO)** | **Rev. 09** |
+| **POST VENTA (SOPORTE TÉCNICO)** | **Rev. 10** |
 | **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 24/02/2026 |
 | **Elabora:** Responsable de SGC | **Revisa y Aprueba:** Dirección |
 

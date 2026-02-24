@@ -1,6 +1,6 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "04"
+revision: "05"
 last_updated: "13/01/2026"
 responsible: "RSGC"
 iso_clause: "9.2"
@@ -12,12 +12,12 @@ pending_actions: ["Vincular informes de auditoría 2026"]
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# PG 04 - Auditorías Internas - Rev. 04
+# PG 04 - Auditorías Internas - Rev. 05
 
 | PROCEDIMIENTO | PG 04 |
 | :--- | :--- |
-| **AUDITORÍAS INTERNAS** | **Rev. 04** |
-| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 04/01/2026 |
+| **AUDITORÍAS INTERNAS** | **Rev. 05** |
+| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 13/01/2026 |
 | **Elabora:** Responsable de SGC | **Revisa y Aprueba:** Dirección |
 
 ---

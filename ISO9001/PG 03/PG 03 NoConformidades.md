@@ -12,12 +12,12 @@ pending_actions: ["Automatizar reporte de hallazgos desde AppSheet"]
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# PG 03 - No Conformes y Acciones Correctivas - Rev. 02
+# PG 03 - No Conformes y Acciones Correctivas - Rev. 04
 
 | PROCEDIMIENTO | PG 03 |
 | :--- | :--- |
-| **NO CONFORMES Y ACCIONES CORRECTIVAS** | **Rev. 02** |
-| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 04/01/2026 |
+| **NO CONFORMES Y ACCIONES CORRECTIVAS** | **Rev. 04** |
+| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 24/02/2026 |
 | **Elabora:** RSGC | **Revisa y Aprueba:** Dirección |
 
 ---

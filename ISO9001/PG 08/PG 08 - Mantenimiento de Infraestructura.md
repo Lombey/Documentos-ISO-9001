@@ -12,12 +12,12 @@ pending_actions: ["Inventario de dispositivos móviles 2026"]
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# PG 08 - Mantenimiento de Infraestructura - Rev. 02
+# PG 08 - Mantenimiento de Infraestructura - Rev. 04
 
 | PROCEDIMIENTO | PG 08 |
 | :--- | :--- |
-| **INFRAESTRUCTURA** | **Rev. 02** |
-| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 04/01/2026 |
+| **INFRAESTRUCTURA** | **Rev. 04** |
+| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 24/02/2026 |
 | **Elabora:** Responsable de SGC | **Revisa y Aprueba:** Dirección |
 
 ---

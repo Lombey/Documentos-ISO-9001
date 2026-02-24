@@ -1,6 +1,6 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "05"
+revision: "06"
 last_updated: "13/01/2026"
 responsible: "RSGC"
 iso_clause: "8.4"
@@ -12,12 +12,12 @@ pending_actions: ["Nueva evaluación de proveedores Q1 2026"]
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# PG 07 - Compras y proveedores - Rev. 05
+# PG 07 - Compras y proveedores - Rev. 06
 
 | PROCEDIMIENTO | PG 07 |
 | :--- | :--- |
-| **COMPRAS Y PROVEEDORES** | **Rev. 05** |
-| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 04/01/2026 |
+| **COMPRAS Y PROVEEDORES** | **Rev. 06** |
+| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 13/01/2026 |
 | **Elabora:** Responsable de SGC | **Revisa y Aprueba:** Dirección |
 
 ---

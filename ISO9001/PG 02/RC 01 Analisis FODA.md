@@ -16,7 +16,7 @@ pending_actions: []
 
 | REGISTRO CRÍTICO | RC 01 |
 | :--- | :--- |
-| **ANÁLISIS FODA Y GESTIÓN DE RIESGOS** | **Rev. 06** |
+| **ANÁLISIS FODA Y GESTIÓN DE RIESGOS** | **Rev. 07** |
 | **Fecha de Emisión:** 13/01/2026 | **Responsable:** RSGC |
 
 ---

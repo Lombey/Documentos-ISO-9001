@@ -1,6 +1,6 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "00"
+revision: "01"
 last_updated: "13/01/2026"
 responsible: "RSGC"
 iso_clause: "8.5.1"
@@ -12,12 +12,12 @@ pending_actions: ["Actualizar capturas de TeamViewer"]
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# PP 05 01 - Procedimientos Particulares para Soporte Técnico de AGDP LINK TOLVA - Rev. 00
+# PP 05 01 - Procedimientos Particulares para Soporte Técnico de AGDP LINK TOLVA - Rev. 01
 
 | PROCEDIMIENTO PARTICULAR | PP 05 01 |
 | :--- | :--- |
-| **SOPORTE TÉCNICO AGDP LINK TOLVA** | **Rev. 00** |
-| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 04/01/2026 |
+| **SOPORTE TÉCNICO AGDP LINK TOLVA** | **Rev. 01** |
+| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 13/01/2026 |
 | **Elabora:** Responsable de Soporte | **Revisa y Aprueba:** Dirección |
 
 ---

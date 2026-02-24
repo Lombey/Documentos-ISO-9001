@@ -12,7 +12,7 @@ pending_actions: []
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# PG 02 - Dirección - Rev. 07
+# PG 02 - Dirección - Rev. 08
 
 | PROCEDIMIENTO | PG 02 |
 | :--- | :--- |

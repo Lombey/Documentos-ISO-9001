@@ -12,12 +12,12 @@ pending_actions: ["Vincular con Master List V2"]
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# PG 01 - Control de Documentos y Registros - Rev. 06
+# PG 01 - Control de Documentos y Registros - Rev. 07
 
 | PROCEDIMIENTO | PG 01 |
 | :--- | :--- |
-| **CONTROL DE DOCUMENTOS Y REGISTROS** | **Rev. 06** |
-| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 04/01/2026 |
+| **CONTROL DE DOCUMENTOS Y REGISTROS** | **Rev. 07** |
+| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 13/01/2026 |
 | **Elabora:** Responsable de SGC | **Revisa y Aprueba:** Dirección |
 
 ---

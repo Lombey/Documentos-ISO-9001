@@ -1,6 +1,6 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "05"
+revision: "06"
 last_updated: "13/01/2026"
 responsible: "RSGC"
 iso_clause: "7.1.2, 7.2"
@@ -12,12 +12,12 @@ pending_actions: ["Completar registros de capacitación Q1"]
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# PG 06 - Gestión de RRHH - Rev. 05
+# PG 06 - Gestión de RRHH - Rev. 06
 
 | PROCEDIMIENTO | PG 06 |
 | :--- | :--- |
-| **GESTIÓN DE RRHH** | **Rev. 05** |
-| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 04/01/2026 |
+| **GESTIÓN DE RRHH** | **Rev. 06** |
+| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 13/01/2026 |
 | **Elabora:** Responsable de SGC | **Revisa y Aprueba:** Dirección |
 
 ---

@@ -1,6 +1,6 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "01"
+revision: "02"
 last_updated: "13/01/2026"
 responsible: "RSGC"
 iso_clause: "8.5, 8.6"
@@ -12,12 +12,12 @@ pending_actions: ["Vincular planillas de recepción de unidades"]
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# PP 05 06 - Procedimientos para nuevos equipos provenientes de concesionarios - Rev. 01
+# PP 05 06 - Procedimientos para nuevos equipos provenientes de concesionarios - Rev. 02
 
 | PROCEDIMIENTO PARTICULAR | PP 05 06 |
 | :--- | :--- |
-| **NUEVOS EQUIPOS (CONCESIONARIOS)** | **Rev. 01** |
-| **Fecha Emisión:** 29/09/2025 | **Fecha Revisión:** 04/01/2026 |
+| **NUEVOS EQUIPOS (CONCESIONARIOS)** | **Rev. 02** |
+| **Fecha Emisión:** 29/09/2025 | **Fecha Revisión:** 13/01/2026 |
 | **Elabora:** Responsable de Post Venta | **Revisa y Aprueba:** Dirección |
 
 ---

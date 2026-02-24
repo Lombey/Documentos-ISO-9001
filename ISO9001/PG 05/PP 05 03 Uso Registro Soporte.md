@@ -1,6 +1,6 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "01"
+revision: "02"
 last_updated: "13/01/2026"
 responsible: "RSGC"
 iso_clause: "7.5, 8.5.1"
@@ -12,12 +12,12 @@ pending_actions: ["Validar campos obligatorios de cierre de ticket"]
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# PP 05 03 - Utilización del Registro de Actividades de Soporte - Rev. 01
+# PP 05 03 - Utilización del Registro de Actividades de Soporte - Rev. 02
 
 | PROCEDIMIENTO PARTICULAR | PP 05 03 |
 | :--- | :--- |
-| **USO REGISTRO SOPORTE** | **Rev. 01** |
-| **Fecha Emisión:** 23/11/2022 | **Fecha Revisión:** 04/01/2026 |
+| **USO REGISTRO SOPORTE** | **Rev. 02** |
+| **Fecha Emisión:** 23/11/2022 | **Fecha Revisión:** 13/01/2026 |
 | **Elabora:** Responsable de Soporte | **Revisa y Aprueba:** Dirección |
 
 ---

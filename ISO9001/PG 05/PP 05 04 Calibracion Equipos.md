@@ -1,6 +1,6 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "01"
+revision: "02"
 last_updated: "13/01/2026"
 responsible: "RSGC"
 iso_clause: "7.1.5"
@@ -12,12 +12,12 @@ pending_actions: ["Cargar certificados de calibración 2026"]
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# PP 05 04 - Calibración de Equipos - Rev. 01
+# PP 05 04 - Calibración de Equipos - Rev. 02
 
 | PROCEDIMIENTO PARTICULAR | PP 05 04 |
 | :--- | :--- |
-| **CALIBRACIÓN DE EQUIPOS** | **Rev. 01** |
-| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 04/01/2026 |
+| **CALIBRACIÓN DE EQUIPOS** | **Rev. 02** |
+| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 13/01/2026 |
 | **Elabora:** Responsable de Soporte | **Revisa y Aprueba:** Dirección |
 
 ---

@@ -157,4 +157,4 @@ Si la alarma se ve en el Formulario (Form) pero no en la Tabla (List):
 
 | Rev. | Fecha | Descripción | Responsable |
 | :--- | :--- | :--- | :--- |
-| 01 | 13/01/2026 | Emisión inicial. Configuración de reportes silenciosos. Estandarización de encabezados digitales y trazabilidad normativa. | RSGC |
+| 01 | 13/01/2026 | Emisión inicial. Configuración de reportes silenciosos. | RSGC |

@@ -93,4 +93,4 @@ Este módulo funciona como el **Padrón Histórico de Equipos**. Una vez realiza
 | :--- | :--- | :--- | :--- |
 | 29/09/2025 | 00 | Emisión inicial. | RSGC |
 | 04/01/2026 | 01 | Actualización de registros: Cambio de Base de Datos vieja por Módulos de AppSheet Actualización de registros a AppSheet. Inclusión de proceso de comunicación de condiciones de uso y bonificación (4.3.5). Adición de diagrama de flujo. | RSGC |
-| 13/01/2026 | 02 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 13/01/2026 | 02 | Corrección de formato de encabezados. | RSGC |

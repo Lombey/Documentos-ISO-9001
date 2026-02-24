@@ -796,5 +796,5 @@ IFS(
 | :--- | :--- | :--- | :--- |
 | 00 | 11/01/2026 | Emisión inicial. | RSGC |
 | 01-03 | 12/01/2026 | Actualización de KPIs. | RSGC |
-| 04 | 13/01/2026 | **Biblioteca Central:** Incorporación de fórmulas de CUIT y Lógica de Estado (NC). Estandarización de encabezados digitales y trazabilidad normativa. | RSGC |
+| 04 | 13/01/2026 | **Biblioteca Central:** Incorporación de fórmulas de CUIT y Lógica de Estado (NC). | RSGC |
 | 05 | 24/02/2026 | Corrección de nombres de columna. | RSGC |

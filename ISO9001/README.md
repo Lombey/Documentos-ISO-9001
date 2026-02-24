@@ -566,4 +566,4 @@ Este repositorio se mantiene actualizado según los cambios documentados en cada
 | Rev. | Fecha | Descripción | Responsable |
 | :--- | :--- | :--- | :--- |
 | 00 | 01/12/2025 | Emisión inicial del README estructurado. | RSGC |
-| 01 | 13/01/2026 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 01 | 13/01/2026 | Corrección de formato de encabezados. | RSGC |

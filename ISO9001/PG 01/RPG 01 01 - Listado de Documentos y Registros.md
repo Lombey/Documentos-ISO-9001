@@ -91,7 +91,7 @@ pending_actions: ["Vincular nuevos procedimientos AppSheet"]
 | --- | --- | --- | --- |
 | 09/08/2021 | 00 | Documento inicial | RSGC |
 | 03/01/2026 | 03 | Actualización masiva de documentos y registros vinculados a AppSheet. | RSGC |
-| 13/01/2026 | 04 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 13/01/2026 | 04 | Corrección de formato de encabezados. | RSGC |
 
 ---
 

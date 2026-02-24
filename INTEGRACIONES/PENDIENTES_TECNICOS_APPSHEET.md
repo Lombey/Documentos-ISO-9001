@@ -42,4 +42,4 @@ Este documento lista las mejoras proyectadas para el ecosistema digital de Corvu
 
 | Rev. | Fecha | Descripción | Responsable |
 | :--- | :--- | :--- | :--- |
-| 01 | 13/01/2026 | Emisión inicial. Centralización de registros de mejora técnica. Estandarización de encabezados digitales y trazabilidad normativa. | RSGC |
+| 01 | 13/01/2026 | Emisión inicial. Centralización de registros de mejora técnica. | RSGC |

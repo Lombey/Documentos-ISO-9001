@@ -12,12 +12,12 @@ pending_actions: ["Validar organigrama V2 con Dirección"]
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# Manual de Gestión de Calidad (MGC) - Corvus S.R.L. - Rev. 11
+# Manual de Gestión de Calidad (MGC) - Corvus S.R.L. - Rev. 13
 
 | DOCUMENTO | MGC |
 | :--- | :--- |
-| **MANUAL DE GESTIÓN DE CALIDAD** | **Rev. 11** |
-| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 04/01/2026 |
+| **MANUAL DE GESTIÓN DE CALIDAD** | **Rev. 13** |
+| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 24/02/2026 |
 | **Elabora:** RSGC | **Revisa y Aprueba:** Dirección |
 
 ---
@@ -207,5 +207,5 @@ A continuación se listan los Procedimientos Generales (PG) del Sistema de Gesti
 | 30/12/2025 | 09 | Ampliación y detalle de la tabla de partes interesadas: completada información de Tolveros, mejoradas descripciones de Dirección, Equipo Trabajo, Clientes (Grandes y PyM), Contratistas, y separación de Socios y Proveedores con especificación de tipos de socios. Incorporación de sección 7 (Recursos) con referencias a PG 06 (Competencia y Toma de Conciencia) y PG 08 (Infraestructura), y mención de ambiente para la operación (7.3). Renumeración de secciones subsiguientes. | RSGC |
 | 31/12/2025 | 10 | Incorporación de descripción del Responsable del SGC (RSGC) en sección 3.1. Ampliación de sección 9 con referencia a RPG 01 01 para listado completo de documentos. Adición de descripción de interrelaciones entre procesos del SGC en sección 3.2. | RSGC |
 | 04/01/2026 | 11 | Estandarización de formato de referencias a documentos con guión (PG 02 - Dirección). Ampliación de sección 5 (Gestión de Riesgos) con descripción de integración con planificación. Adición de referencia a proceso de satisfacción del cliente en sección 8.2. | RSGC |
-| 13/01/2026 | 12 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 13/01/2026 | 12 | Corrección de formato de encabezados. | RSGC |
 | 24/02/2026 | 13 | Expansión de sección 5 (Gestión de Riesgos y Oportunidades): fuentes de identificación, ciclo de dos instancias (planificación y revisión por la dirección), referencia a metodología en PG 02 sección 5.3.1. | RSGC |

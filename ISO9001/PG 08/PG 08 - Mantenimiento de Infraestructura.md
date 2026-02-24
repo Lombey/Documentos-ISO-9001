@@ -1,7 +1,7 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "02"
-last_updated: "13/01/2026"
+revision: "04"
+last_updated: "24/02/2026"
 responsible: "RSGC"
 iso_clause: "7.1.3"
 audit_ready: true
@@ -44,7 +44,7 @@ Activos físicos (PCs, Laptops, Mobile, Tablets de prueba) y servicios de softwa
 
 ### 5.1 Registro y Control de Inventario
 
-La empresa mantiene un inventario actualizado en el **Módulo de Inventario (AppSheet)** o en su defecto en el **RPG 08 01**. El registro incluye:
+La empresa mantiene un inventario actualizado a través del **Módulo de Inventario (AppSheet)**, cuya base de datos subyacente es el **RPG 08 01**. El registro incluye:
 
 - Identificación del activo (Marca/Modelo/Serie/IMEI).
 - Usuario asignado responsable.
@@ -85,4 +85,5 @@ Para asegurar que el soporte no se vea afectado por fallas de infraestructura ex
 | 09/08/2021 | 00 | Emisión inicial. | RSGC |
 | 09/10/2024 | 01 | Actualización de logos. | RSGC |
 | 03/01/2026 | 02 | Digitalización: Integración del inventario con la lógica de AppSheet y definición de infraestructura digital. | RSGC |
-| 13/01/2026 | 03 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 13/01/2026 | 03 | Corrección de formato de encabezados. | RSGC |
+| 24/02/2026 | 04 | Clarificación relación AppSheet/RPG 08 01 en sección 5.1: AppSheet es el frontend, RPG 08 01 es la base de datos subyacente. | RSGC |

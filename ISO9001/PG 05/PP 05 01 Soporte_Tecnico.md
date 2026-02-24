@@ -141,4 +141,4 @@ En [www.agdp.com.ar](http://www.agdp.com.ar) (ADMINISTRADOR):
 | Fecha | Revisión | Descripción | Responsable |
 | --- | --- | --- | --- |
 | 09/08/2021 | 00 | Documento inicial | RSGC |
-| 13/01/2026 | 01 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 13/01/2026 | 01 | Corrección de formato de encabezados. | RSGC |

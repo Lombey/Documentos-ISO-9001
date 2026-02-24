@@ -277,4 +277,4 @@ El sistema garantiza la integridad de la información y la restricción de acces
 | 20 | 12/01/2026 | **Trazabilidad de Evidencia:** Desglose de documentos de referencia y registros asociados (RPGs) para máxima transparencia. | RSGC |
 | 21 | 12/01/2026 | **Definición de Alcance (ISO 9001):** Incorporación de avisos de exclusión para módulos comerciales y administrativos fuera del alcance certificado. | RSGC |
 | 22 | 12/01/2026 | **Sincronización de Pantallas:** Ajuste final de registros asociados incorporando Instructivos (RPG 05 02) y Envíos (RPG 05 04). | RSGC |
-| 23 | 13/01/2026 | **Depuración SGC:** Traslado de lógica y registros del SGC al nuevo IT 04. Estandarización de encabezados digitales y trazabilidad normativa. | RSGC |
+| 23 | 13/01/2026 | **Depuración SGC:** Traslado de lógica y registros del SGC al nuevo IT 04. | RSGC |

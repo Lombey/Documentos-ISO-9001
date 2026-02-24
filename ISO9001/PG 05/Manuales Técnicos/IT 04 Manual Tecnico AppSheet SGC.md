@@ -163,4 +163,4 @@ Cada interacción con los datos genera un registro automático de:
 
 | Rev. | Fecha | Descripción | Responsable |
 | :--- | :--- | :--- | :--- |
-| 01 | 13/01/2026 | Emisión inicial. Configuración técnica de la App SGC. Estandarización de encabezados digitales y trazabilidad normativa. | RSGC |
+| 01 | 13/01/2026 | Emisión inicial. Configuración técnica de la App SGC. | RSGC |

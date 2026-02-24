@@ -88,4 +88,4 @@ Para mantener la trazabilidad que exige la norma y permitir la comparación inte
 | 15/11/2022 | 03 | Actualización de Alcance 5.2. | RSGC |
 | 09/10/2024 | 04 | Evaluación de proveedores externos (5.2.1 y 5.2.2). Actualización de Logo. | RSGC |
 | 03/01/2026 | 05 | Digitalización del proceso: Integración con los módulos de AppSheet para pedidos y gestión. Inclusión de evaluación continua basada en desempeño. | RSGC |
-| 13/01/2026 | 06 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 13/01/2026 | 06 | Corrección de formato de encabezados. | RSGC |

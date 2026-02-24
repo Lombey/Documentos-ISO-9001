@@ -137,4 +137,4 @@ Herramienta para calcular la sensibilidad corregida (sin utilizar la app)
 | --- | --- | --- | --- |
 | 09/08/2021 | 00 | Documento inicial | RSGC |
 | 03/01/2026 | 01 | Ampliación de procedimiento con mas detalle y claridad. Adecuación de terminología. Estructuración más clara. Cambio de nombre de la app a nombre actual. Incorporacion de planilla de calibracion | RSGC |
-| 13/01/2026 | 02 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 13/01/2026 | 02 | Corrección de formato de encabezados. | RSGC |

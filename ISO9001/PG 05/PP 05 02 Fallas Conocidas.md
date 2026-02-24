@@ -142,4 +142,4 @@ Reiniciar app/tablet. Como preventivo: encender el equipo con el tubo abierto (s
 | --- | --- | --- | --- |
 | 09/08/2021 | 00 | Documento inicial | RSGC |
 | 22/11/2022 | 01 | Actualización del objetivo y cambio de nombre. | RSGC |
-| 13/01/2026 | 02 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 13/01/2026 | 02 | Corrección de formato de encabezados. | RSGC |

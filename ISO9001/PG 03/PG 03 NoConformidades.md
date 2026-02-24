@@ -1,7 +1,7 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "02"
-last_updated: "13/01/2026"
+revision: "04"
+last_updated: "24/02/2026"
 responsible: "RSGC"
 iso_clause: "10.2"
 audit_ready: true
@@ -56,7 +56,15 @@ Todo reclamo de cliente o caso de soporte marcado como "Crítico" en el proceso 
 
 ### 5.2 Tipos y Origen
 
-Se categorizan según su impacto (NC, Observación u Oportunidad de Mejora) y su origen (Proceso, Reclamo, Auditoría, etc.), facilitando la generación de estadísticas automáticas.
+Se categorizan según su impacto y su origen (Proceso, Reclamo, Auditoría, etc.), facilitando la generación de estadísticas automáticas.
+
+**Tipos internos:**
+- **NC:** No Conforme — incumplimiento de un requisito.
+- **Obs:** Observación — desviación leve que puede devenir en NC.
+- **OM:** Oportunidad de Mejora — sugerencia que no incumple la norma.
+
+**Tipos externos:**
+- **CM (Comentario de Mejora):** Clasificación utilizada por auditores externos de certificación. Equivalente a una Oportunidad de Mejora en la nomenclatura interna. Se preserva la clasificación original del auditor al registrar hallazgos de auditorías externas.
 
 ### 5.3 Acciones Inmediatas y Análisis de Causas
 
@@ -87,4 +95,5 @@ Transcurrido el tiempo prudencial (según la criticidad), el RSGC evalúa si la 
 | 09/08/2021 | 00 | Documento inicial | RSGC |
 | 09/10/2024 | 01 | Actualización del logo | RSGC |
 | 12/01/2026 | 02 | Integración del proceso de gestión de NC al ecosistema digital de AppSheet. Definición de tratamiento para Casos Críticos de soporte. Automatización de seguimiento y monitoreo de eficacia vía Dashboards. | RSGC |
-| 13/01/2026 | 03 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 13/01/2026 | 03 | Corrección de formato de encabezados. | RSGC |
+| 24/02/2026 | 04 | Incorporación de definiciones explícitas de tipos en sección 5.2; adición de tipo CM (Comentario de Mejora) para clasificación de auditores externos. | RSGC |

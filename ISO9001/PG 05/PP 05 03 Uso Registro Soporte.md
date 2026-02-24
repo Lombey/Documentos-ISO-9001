@@ -94,4 +94,4 @@ Se confeccionan al final de cada temporada. No tienen un formato fijo, adaptánd
 | --- | --- | --- | --- |
 | 09/08/2021 | 00 | Documento inicial | RSGC |
 | 23/11/2022 | 01 | Adecuación de imágenes y descripciones para RPG 05 01 Rev 02. | RSGC |
-| 13/01/2026 | 02 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 13/01/2026 | 02 | Corrección de formato de encabezados. | RSGC |

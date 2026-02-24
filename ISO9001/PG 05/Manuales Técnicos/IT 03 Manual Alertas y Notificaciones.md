@@ -135,4 +135,4 @@ Para asegurar la precisión en GMT-3, el proyecto debe tener configurado:
 | 00 | 05/01/2026 | Emisión inicial. Documentación de automatismos de Cronograma y Cobranzas. | RSGC |
 | 01 | 12/01/2026 | Re-codificación a IT 03 e incorporación de la sección de Documentos Asociados. | RSGC |
 | 02 | 12/01/2026 | **Estandarización SGC:** Desglose de documentos de referencia y registros asociados para máxima trazabilidad. | RSGC |
-| 03 | 13/01/2026 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 03 | 13/01/2026 | Corrección de formato de encabezados. | RSGC |

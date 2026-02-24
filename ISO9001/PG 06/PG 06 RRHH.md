@@ -124,8 +124,9 @@ Para la gestión operativa, el sistema ofrece las siguientes interfaces digitale
 
 | Fecha | Rev. | Descripción | Responsable |
 | :--- | :--- | :--- | :--- |
-| 09/08/2021 | 00 | Emisión inicial. | RSGC |
-| ... | ... | ... | ... |
+| 09/08/2021 | 00 | Documento inicial. | RSGC |
+| 06/12/2021 | 01 | Adición RPG 06 04, actualización punto 5.3. | RSGC |
+| 27/10/2022 | 02 | 5.3. Se incorpora a Dirección como evaluador. | RSGC |
 | 03/01/2026 | 03 | Adición Toma de Conciencia y Evidencia de Competencia. | RSGC |
 | 04/01/2026 | 05 | **Digitalización AppSheet:** Se separa RPG 06 01 (Perfil) de RPG 06 07 (Evaluación). Se unifican RPG 06 02 y 03 en RPG 06 06. Se incorpora sección 5.7 detallando módulos de AppSheet. | RSGC |
-| 13/01/2026 | 06 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 13/01/2026 | 06 | Corrección de formato de encabezados. | RSGC |

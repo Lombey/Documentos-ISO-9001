@@ -103,4 +103,4 @@ El Encargado del sector auditado debe tomar acciones correctivas sin demora. El 
 | 08/10/2024 | 02 | Actualización logo corvus. | RSGC |
 | 03/01/2026 | 03 | Integración de auditoría de registros digitales (AppSheet) y verificación de integridad del Backend (Google Sheets). Clarificación del almacenamiento del informe en formato documento. | RSGC |
 | 04/01/2026 | 04 | 5.1. Simplificacion de criterio de selección de auditores. Unificación de registros RPG 04 01 y RPG 04 03 en un único registro de gestión integral (RPG 04 03). | RSGC |
-| 13/01/2026 | 05 | Estandarización de encabezados digitales y optimización de la trazabilidad normativa (Cláusula 7.5). | RSGC |
+| 13/01/2026 | 05 | Corrección de formato de encabezados. | RSGC |

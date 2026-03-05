@@ -1,7 +1,7 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "00"
-last_updated: "13/01/2026"
+revision: "01"
+last_updated: "27/02/2026"
 responsible: "RSGC"
 iso_clause: "7.1.3, 7.5"
 audit_ready: true
@@ -12,11 +12,11 @@ pending_actions: ["Documentar lógica de cálculo de estado de NC"]
 
 <link rel="stylesheet" href="../../../reporte-estilo.css">
 
-# IT 04 - Manual Técnico de Administración AppSheet (SGC) - Rev. 00
+# IT 04 - Manual Técnico de Administración AppSheet (SGC) - Rev. 01
 
 | INSTRUCTIVO TÉCNICO | IT 04 |
 | :--- | :--- |
-| **MANUAL TÉCNICO DE ADMINISTRACIÓN APPSHEET (SGC)** | **Rev. 00** |
+| **MANUAL TÉCNICO DE ADMINISTRACIÓN APPSHEET (SGC)** | **Rev. 01** |
 | **Fecha de Emisión:** 13/01/2026 | **Sistemas:** AppSheet / SGC |
 | **Elabora:** RSGC | **Aprueba:** Dirección |
 
@@ -67,7 +67,67 @@ A diferencia de las acciones nativas del sistema (Add, Edit, Delete), la aplicac
 
 ### 4.3 Integración de Hallazgos
 
-* **Gestión de Recepción:** La tabla `HALLAZGOS SGC` actúa como buzón de entrada para los reportes enviados desde la App de Soporte, permitiendo al RSGC validar el hallazgo antes de convertirlo en una NC formal.
+La integración se implementa mediante tres acciones configuradas en la App de Soporte, sobre la tabla `Envios de clientes hacia Corvus`:
+
+#### Acción visible: REPORTAR HALLAZGO
+
+* **Tipo:** Grouped — ejecuta una secuencia de acciones.
+* **Posición:** Inline, adjunta a la columna `Accion_editar`.
+* **Condición de visibilidad:** `[HALLAZGOS SGC] = "REPORTABLE"` — la acción solo aparece en registros habilitados para reportar. Una vez ejecutada desaparece, impidiendo reportes duplicados.
+* **Secuencia ejecutada:** `SGC_Crear_Hallazgo` → `SGC_Cambiar_Estado_Local`.
+
+#### Acción interna 1: SGC_Crear_Hallazgo
+
+* **Tipo:** Data — agrega una nueva fila en la tabla `HALLAZGOS SGC` de la App SGC.
+* **Posición:** Hide (no visible al usuario).
+* **Campos que escribe:**
+
+| Campo destino | Valor |
+| :--- | :--- |
+| `ID` | `UNIQUEID()` |
+| `FECHA REPORTE` | `NOW()` |
+| `ORIGEN TABLA` | `"ENVIOS DE CLIENTES HACIA CORVUS"` |
+| `ID REGISTRO ORIGEN` | `[ID]` — vincula el hallazgo al registro de origen |
+| `HALLAZGO TECNICO` | Ver fórmula abajo |
+**Fórmula HALLAZGO TECNICO:**
+```
+CONCATENATE(
+  " ALERTA DE REINCIDENCIA (90 DÍAS) - Cliente: ", [CLIENTE / EMPRESA],
+  " | Se detectaron envíos previos de este cliente mediante los IDs: ",
+  FILTER(
+    "Envios de clientes hacia Corvus",
+    AND(
+      [CLIENTE / EMPRESA] = [_THISROW].[CLIENTE / EMPRESA],
+      [ID] <> [_THISROW].[ID],
+      DATE([FECHA RECEPCIÓN]) >= (TODAY() - 90)
+    )
+  )
+)
+```
+> Detecta reincidencia del mismo cliente en los últimos 90 días y lista los IDs de envíos previos relacionados.
+
+| `AGENTE` | `LOOKUP(USEREMAIL(), ...)` — identifica al agente que reporta |
+| `ESTADO RSGC` | `"PENDIENTE"` — estado inicial para revisión del RSGC |
+
+#### Acción interna 2: SGC_Cambiar_Estado_Local
+
+* **Tipo:** Data — modifica columnas en el registro de origen.
+* **Posición:** Hide (no visible al usuario).
+* **Efecto:** Escribe `"REPORTADO"` en el campo `HALLAZGOS SGC` del registro origen. Esto hace que la condición de visibilidad de **REPORTAR HALLAZGO** deje de cumplirse, ocultando la acción y previniendo reportes duplicados.
+
+#### Flujo completo
+
+```
+Registro en "Envios de clientes hacia Corvus"
+        │
+        ▼ [HALLAZGOS SGC] = "REPORTABLE"
+[REPORTAR HALLAZGO]  ← visible inline para el agente
+        │
+        ├─ SGC_Crear_Hallazgo  → nueva fila en HALLAZGOS SGC (ESTADO RSGC: PENDIENTE)
+        └─ SGC_Cambiar_Estado_Local → marca origen como "REPORTADO"
+```
+
+**Gestión de Recepción:** La tabla `HALLAZGOS SGC` actúa como buzón de entrada. El RSGC valida cada hallazgo en la vista **HALLAZGOS SGC PROCESO** antes de convertirlo en una NC formal en `RPG 0301`.
 
 ## 5. CAPA DE INTELIGENCIA Y AUTOMATIZACIÓN (BOTS)
 
@@ -163,4 +223,5 @@ Cada interacción con los datos genera un registro automático de:
 
 | Rev. | Fecha | Descripción | Responsable |
 | :--- | :--- | :--- | :--- |
-| 01 | 13/01/2026 | Emisión inicial. Configuración técnica de la App SGC. | RSGC |
+| 00 | 13/01/2026 | Emisión inicial. Configuración técnica de la App SGC. | RSGC |
+| 01 | 27/02/2026 | Documentación detallada de la integración de Hallazgos (sección 4.3): configuración de acciones REPORTAR HALLAZGO, SGC_Crear_Hallazgo y SGC_Cambiar_Estado_Local. | RSGC |

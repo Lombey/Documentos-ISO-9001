@@ -1,10 +1,10 @@
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# RPG 02 06 - Plan de Migración Soporte AppSheet - Rev. 00
+# RPG 02 06 - Plan de Migración Soporte AppSheet - Rev. 01
 
 | REGISTRO | RPG 02 06 |
 | :--- | :--- |
-| **CONTROL DE CAMBIOS (ANEXO)** | **Rev. 00** |
+| **CONTROL DE CAMBIOS (ANEXO)** | **Rev. 01** |
 | **Fecha Emisión:** 04/01/2026 | **ID Cambio:** CC-2026-02-SOP |
 | **Elabora:** RSGC | **Aprueba:** Dirección |
 
@@ -89,3 +89,33 @@ El cambio incluye:
 | :--- | :--- | :--- | :--- |
 | **Revisión (RSGC)** | Martín Lombardi | 04/01/2026 | ☑ Aprobado <br> ☐ Rechazado |
 | **Dirección** | Mariano Oddino | 04/01/2026 | ☑ Aprobado <br> ☐ Rechazado |
+
+---
+
+## 9. Seguimiento de Ejecución
+
+> **Fecha de relevamiento:** 27/02/2026 · Confirmado por RSGC.
+> Las actividades #0–#9 se completaron sustancialmente en los plazos previstos. Pendiente únicamente la Verificación de Eficacia (#10), programada para el 15/03/2026.
+
+| # | Actividad | Fecha Límite | Estado | Evidencia |
+| :--- | :--- | :--- | :---: | :--- |
+| 0 | **Investigación** (Auto-capacitación en AppSheet) | 05/01/2026 | ✅ Completado | — |
+| 1 | **Blindaje de Excels** (Restringir permisos a Solo Lectura) | 08/01/2026 | ✅ Completado | — |
+| 2 | **Prototipado** (Tablas base, UX Básica) | 10/01/2026 | ✅ Completado | Tablas base en AppSheet Soporte |
+| 3 | **Datos Legacy** (Refactorización de registros históricos) | 15/01/2026 | ✅ Completado | Registros históricos cargados en AppSheet Soporte |
+| 4 | **Configuración de Módulos** (Pantallas según alcance definido) | 15/01/2026 | ✅ Completado | Módulos activos en AppSheet Soporte |
+| 5 | **Alertas y Automatismos** (Format Rules, notificaciones) | 18/01/2026 | ✅ Completado | IT 03 - Manual Alertas y Notificaciones |
+| 6 | **Piloto** (Pruebas con grupo reducido) | 20/01/2026 | ✅ Completado | — |
+| 7 | **Ajustes** (Refinar automatismos y envíos de PDF) | 25/01/2026 | ✅ Completado | — |
+| 8 | **Capacitación** (Formación práctica al equipo) | 28/01/2026 | ✅ Completado | RPG 06 06 · CAP-03 · CAP-04 |
+| 9 | Go-Live (Inicio uso obligatorio) | 01/02/2026 | ✅ Completado | Sistema AppSheet Soporte en producción |
+| 10 | Verificación de Eficacia (Auditoría de tickets y uso) | 15/03/2026 | ⏳ Pendiente | — |
+
+---
+
+## Historial de Cambios
+
+| Fecha | Rev. | Descripción | Responsable |
+| :--- | :--- | :--- | :--- |
+| 04/01/2026 | 00 | Emisión del plan de migración Soporte (CC-2026-02-SOP) | RSGC |
+| 27/02/2026 | 01 | Incorporación de sección de Seguimiento de Ejecución con estado de avance al 27/02/2026 | RSGC |

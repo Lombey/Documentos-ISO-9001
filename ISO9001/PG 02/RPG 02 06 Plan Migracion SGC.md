@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# RPG 02 06 - Plan de Migración SGC - Rev. 03
+# RPG 02 06 - Plan de Migración SGC - Rev. 04
 
 | REGISTRO DE PROCEDIMIENTO | RPG 02 06 |
 | :--- | :--- |
-| **CONTROL DE CAMBIOS** | **Rev. 03** |
-| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 04/01/2026 |
+| **CONTROL DE CAMBIOS** | **Rev. 04** |
+| **Fecha Emisión:** 09/08/2021 | **Fecha Revisión:** 27/02/2026 |
 | **Elabora:** RSGC | **Revisa y Aprueba:** Dirección |
 
 ---
@@ -101,3 +101,34 @@ El cambio incluye la reestructuración de registros clave:
 | :--- | :--- | :--- | :--- |
 | **Revisión (RSGC)** | Martín Lombardi | 04/01/2026 | ☑ Aprobado <br> ☐ Rechazado |
 | **Dirección** | Mariano Oddino | 04/01/2026 | ☑ Aprobado <br> ☐ Rechazado |
+
+---
+
+## 8. Seguimiento de Ejecución
+
+> **Fecha de relevamiento:** 27/02/2026 · Confirmado por RSGC.
+> Las actividades #0–#10 se completaron sustancialmente en los plazos previstos. Pendiente únicamente la Verificación de Eficacia (#11), programada para el 15/03/2026.
+
+| # | Actividad | Fecha Límite | Estado | Evidencia |
+| :--- | :--- | :--- | :---: | :--- |
+| 0 | **Investigación** | 02/01/2026 | ✅ Completado | — |
+| 1 | **Blindaje de Excels** (Restringir permisos a Solo Lectura) | 08/01/2026 | ✅ Completado | — |
+| 2 | Diseño de Estructura de Datos (Tablas base AppSheet) | 10/01/2026 | ✅ Completado | Tablas base en AppSheet SGC |
+| 3 | Adecuación de Datos Históricos (Auditorías/Capacitaciones/NC) | 15/01/2026 | ✅ Completado | Registros históricos cargados en AppSheet SGC |
+| 4 | **Configuración de Módulos** (Pantallas según alcance definido) | 15/01/2026 | ✅ Completado | Módulos activos en AppSheet SGC |
+| 5 | **Alertas y Automatismos** (Format Rules, notificaciones, semáforos) | 18/01/2026 | ✅ Completado | IT 02 - Fórmulas KPI AppSheet · IT 03 - Manual Alertas y Notificaciones |
+| 6 | **Documentación Técnica** (IT 04 Manual Admin) | 20/01/2026 | ✅ Completado | IT 04 - Manual Técnico AppSheet SGC |
+| 7 | **Piloto y Validación** (Pruebas con grupo reducido) | 25/01/2026 | ✅ Completado | — |
+| 8 | Capacitación al Personal (Taller CAP-03) | 30/01/2026 | ✅ Completado | — |
+| 9 | **Actualización Documental** (PG y RPGs) | 31/01/2026 | ✅ Completado | Historiales de revisión PG 01–PG 08 (mayor impacto en PG 05 y PG 06) |
+| 10 | Go-Live (Inicio uso obligatorio) | 01/02/2026 | ✅ Completado | Sistema AppSheet SGC en producción |
+| 11 | Verificación de Eficacia (Auditoría de Registros) | 15/03/2026 | ⏳ Pendiente | — |
+
+---
+
+## Historial de Cambios
+
+| Fecha | Rev. | Descripción | Responsable |
+| :--- | :--- | :--- | :--- |
+| 04/01/2026 | 03 | Emisión del plan de migración SGC (CC-2026-01) | RSGC |
+| 27/02/2026 | 04 | Incorporación de sección de Seguimiento de Ejecución con estado de avance al 27/02/2026 | RSGC |

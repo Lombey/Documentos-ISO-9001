@@ -1,23 +1,24 @@
 ---
 google_drive_id: "ID_PENDIENTE"
-revision: "02"
-last_updated: "13/01/2026"
+revision: "04"
+last_updated: "05/03/2026"
 responsible: "RSGC"
 iso_clause: "7.1.3, 8.5"
 audit_ready: true
-tags: ["alertas", "notificaciones", "automatisacion", "soporte"]
-ai_brief: "Manual de configuración de alertas y notificaciones automáticas para soporte y SGC."
+tags: ["alertas", "notificaciones", "automatizacion", "soporte", "cobranzas", "historico"]
+ai_brief: "Manual de configuración de alertas, notificaciones automáticas y snapshot histórico de cobranzas para soporte y SGC."
 pending_actions: ["Configurar alertas de reincidencia de envíos"]
 ---
 
 <link rel="stylesheet" href="../../reporte-estilo.css">
 
-# IT 03 - Manual de Alertas y Notificaciones Automáticas - Rev. 02
+# IT 03 - Manual de Alertas y Notificaciones Automáticas - Rev. 04
 
 | INSTRUCTIVO TÉCNICO | IT 03 |
 | :--- | :--- |
-| **MANUAL DE ALERTAS Y NOTIFICACIONES** | **Rev. 02** |
-| **Fecha de Emisión:** 12/01/2026 | **Sistemas:** AppSheet / G-Workspace |
+| **MANUAL DE ALERTAS Y NOTIFICACIONES** | **Rev. 04** |
+| **Fecha de Emisión:** 12/01/2026 | **Fecha Revisión:** 05/03/2026 |
+| **Sistemas:** AppSheet / G-Workspace | |
 | **Elabora:** RSGC | **Aprueba:** Dirección |
 
 ---
@@ -55,24 +56,87 @@ Configurado con un activador de tiempo **diario** entre las 08:00 y 09:00 AM (AR
 
 ---
 
-## 4. MÓDULO B: COBRANZAS (RPG 05 03)
+## 4. MÓDULO B: COBRANZAS (CONECTIVIDADES)
 
-* **Ubicación:** Google Sheet `SGC Corvus - Conectividades` (`ID: CONECTIVIDADES-DB`).
-* **Archivos de Script:** `Alertas_Responsables.gs` y `Notificacion_cobranzas.gs`.
+* **Ubicación fuente:** Google Sheet `Base de Datos Tolvas`, pestaña `CONECTIVIDADES RPG0503`.
+* **Archivos de Script:** `Alertas_Responsables.gs`, `Notificacion_cobranzas.gs` y `Snapshot_diario_cobranzas_historico.gs`.
+* **Procedimiento vinculado:** PP 05 05 - Cobranza de Conectividades.
 
 ### 4.1 Alertas por Responsable (`Alertas_Responsables.gs`)
 
-Agrupa todos los casos de un mismo responsable en un único correo para evitar saturación de la bandeja de entrada.
+**Función:** `monitorCobranzasConectividades()`
+
+Agrupa todos los casos estancados de un mismo responsable en un único correo para evitar saturación de la bandeja de entrada. Martin no recibe este mail porque ya recibe el resumen gerencial completo (4.2).
 
 * **Filtros de Exclusión:** No se notifican casos en estado `COBRADA`, `SUSPENDIDO`, `BONIFICADA` o `BONIFICADA 1 AÑO (CONCESIONARIO)`.
-* **Criterio Temporal:** Se dispara si han pasado **> 68 horas** desde la fecha grabada en la columna `FECHA DE CAMBIO DE ESTADO` (P), siempre que el `MES VENC.` coincida con el mes en curso.
+* **Criterio Temporal:** Se dispara si han pasado **> 68 horas** desde la fecha grabada en la columna `FECHA DE CAMBIO DE ESTADO` (col. P, índice 15), siempre que el `MES VENC.` (col. I, índice 8) coincida con el mes en curso.
+* **Destinatarios:** Cada responsable según la tabla de contactos (sección 5). No incluye a MARTIN.
 
 ### 4.2 Resumen Gerencial (`Notificacion_cobranzas.gs`)
 
-Envía un reporte consolidado con el estado de todos los responsables a la Dirección (Martin y Mariano).
+**Función:** `generarResumenOperativoDiario()`
 
-* **Contenido:** Lista de responsables, clientes, estados actuales y horas de inactividad.
+Envía un reporte consolidado con el estado de **todas** las cobranzas pendientes del mes a la Dirección (Martin y Mariano).
+
+* **Contenido:** Lista de responsables, clientes, estados actuales, horas de inactividad y total de casos sin cobrar.
 * **Formato:** Tabla HTML con resaltado en **Rojo** para casos que superan el umbral de 68 horas.
+* **Año dinámico:** Se calcula automáticamente con `getFullYear()` para evitar hardcodeo.
+* **Destinatarios:** `martin.lombardi@gmail.com` y `oddinom@gmail.com`.
+
+### 4.3 Snapshot Histórico (`Snapshot_diario_cobranzas_historico.gs`)
+
+**Función:** `snapshotDiarioCobranzas()`
+
+Graba una foto diaria de las métricas de cobranza en un Google Sheet independiente para construir series de tiempo y análisis histórico.
+
+* **Destino:** Google Sheet `Histórico Cobranzas` (`ID: 1wVjmZDIWLZvwunf7NrkqSh91yE2e31a286Y0zFDsZRE`).
+* **Pestaña RESUMEN:** Una fila por día con métricas globales del mes en curso.
+
+| Columna | Descripción |
+| :--- | :--- |
+| Fecha | Fecha del snapshot (dd/mm/yyyy) |
+| Mes | Mes en curso (ej: MARZO) |
+| Total Mes | Total de conectividades del mes |
+| Cobrables | Total Mes - Suspendidas - Bonificadas |
+| Cobradas | Cantidad en estado COBRADA o COBRADA (CHEQUES) |
+| % Cobro | Cobradas / Cobrables × 100 |
+| Asignadas | Cantidad en estado ASIGNADA |
+| Primer Contacto | Cantidad en estado PRIMER CONTACTO |
+| Segundo Contacto | Cantidad en estado SEGUNDO CONTACTO |
+| Factura Pendiente | Cantidad en estado FACTURA PENDIENTE DE PAGO |
+| Reclamo Pago | Cantidad en estado FACTURA PENDIENTE - RECLAMO DE PAGO |
+| 2° Reclamo | Cantidad en estado FACTURA PENDIENTE - 2° RECLAMO DE PAGO |
+| Suspendidas | Cantidad en estado SUSPENDIDO |
+| Bonificadas | Cantidad en estado BONIFICADA o BONIFICADA 1 AÑO (CONCESIONARIO) |
+| Alertas >3d | Casos no excluidos con > 68 horas sin cambio de estado |
+
+* **Pestaña DETALLE:** Una fila por cobrador por día con desglose individual.
+
+| Columna | Descripción |
+| :--- | :--- |
+| Fecha, Mes | Igual que RESUMEN |
+| Cobrador | Nombre del responsable (campo QUIEN COBRA) |
+| Total | Conectividades asignadas al cobrador en el mes |
+| Asignadas ... Cobradas | Desglose por estado (misma lógica que RESUMEN) |
+| Alertas >3d | Casos del cobrador con > 68 horas sin cambio |
+
+* **Control de duplicados:** Si se ejecuta más de una vez en el mismo día, sobreescribe la foto anterior (no acumula filas duplicadas).
+* **Creación automática:** Las pestañas y headers se crean automáticamente en la primera ejecución.
+
+### 4.4 Mapeo de Columnas
+
+Los tres scripts leen las mismas columnas de la pestaña `CONECTIVIDADES RPG0503`:
+
+| Índice | Columna | Campo | Uso |
+| :--- | :--- | :--- | :--- |
+| 2 | C | Empresa/CLIENTE 1 | Nombre del cliente |
+| 8 | I | MES VENC. | Filtro por mes en curso |
+| 13 | N | QUIEN COBRA | Responsable asignado |
+| 14 | O | ESTADO | Estado de la gestión |
+| 15 | P | FECHA DE CAMBIO DE ESTADO | Cálculo de inactividad |
+
+> [!CAUTION]
+> Si se agregan o mueven columnas en la hoja, los índices deben actualizarse en los tres scripts simultáneamente. Un índice corrido hace que el script lea datos incorrectos sin generar error visible.
 
 ---
 
@@ -80,12 +144,13 @@ Envía un reporte consolidado con el estado de todos los responsables a la Direc
 
 Los correos electrónicos están hard-coded dentro de los scripts para mayor seguridad y velocidad de ejecución:
 
-| Responsable | Email Vinculado |
-| :--- | :--- |
-| **MARTIN** | `martin.lombardi@gmail.com` |
-| **MARIANO** | `moddino@gmail.com` |
-| **NICO** | `agdpcorvusweb@gmail.com` |
-| **MAURO** | `mauropalomeque@gmail.com` |
+| Responsable | Email | Recibe |
+| :--- | :--- | :--- |
+| **MARTIN** | `martin.lombardi@gmail.com` | Resumen gerencial (4.2) |
+| **MARIANO** | `oddinom@gmail.com` | Alertas individuales (4.1) + Resumen gerencial (4.2) |
+| **NICOLAS** | `agdpcorvusweb@gmail.com` | Alertas individuales (4.1) |
+| **MAURO** | `mauropalomeque@gmail.com` | Alertas individuales (4.1) |
+| **MILI** | `cobranzas@corvus.net.ar` | Alertas individuales (4.1) |
 
 ---
 
@@ -98,17 +163,37 @@ Los correos electrónicos están hard-coded dentro de los scripts para mayor seg
 
 ### 6.2 Cambiar destinatarios o tiempos
 
-* **Editar Emails:** Buscar la constante `EMAILS` en el script y actualizar la dirección entre comillas.
+* **Editar Emails:** Buscar la constante `EMAILS` (alertas individuales) o `EMAILS_REPORT` (resumen gerencial) en el script y actualizar la dirección entre comillas. Actualizar también la sección 5 de este documento.
 * **Editar Umbral de Horas:** Buscar el valor `68` y reemplazar por el nuevo límite de horas deseado.
+* **Agregar cobrador:** Agregar una entrada al objeto `EMAILS` en `Alertas_Responsables.gs`. El nombre debe coincidir exactamente con el valor del campo `QUIEN COBRA` en la hoja, en mayúsculas.
 
-### 6.3 Configuración de Zona Horaria
+### 6.3 Cambiar destino del histórico
+
+El ID del Sheet histórico está en la constante `ID_HISTORICO` al inicio de `Snapshot_diario_cobranzas_historico.gs`. Para migrar a otro Sheet, reemplazar el ID y verificar que el script tenga permisos de escritura.
+
+### 6.4 Configuración de Zona Horaria
 
 Para asegurar la precisión en GMT-3, el proyecto debe tener configurado:
 `"timeZone": "America/Argentina/Buenos_Aires"` en el archivo `appsscript.json`.
 
 ---
 
-## 7. DOCUMENTOS DE REFERENCIA (MARCO PROCEDIMENTAL)
+## 7. ACTIVADORES (TRIGGERS)
+
+Configurados en **Apps Script > Activadores** del Sheet `Base de Datos Tolvas`:
+
+| Función | Tipo | Frecuencia | Propósito |
+| :--- | :--- | :--- | :--- |
+| `snapshotDiarioCobranzas` | Basado en tiempo | Diario, 22:00 a 23:00 | Foto diaria de métricas |
+| `monitorCobranzasConectividades` | Basado en tiempo | Diario, 10:00 a 11:00 | Alertas individuales a cobradores |
+| `generarResumenOperativoDiario` | Basado en tiempo | Diario, 10:00 a 11:00 | Resumen gerencial a Dirección |
+
+> [!NOTE]
+> El snapshot se ejecuta al cierre del día (22:00-23:00) para capturar el estado más completo de la jornada. Los reportes de alerta se ejecutan por la mañana (10:00-11:00) para que los responsables actúen durante el día.
+
+---
+
+## 8. DOCUMENTOS DE REFERENCIA (MARCO PROCEDIMENTAL)
 
 | Código | Nombre |
 | :--- | :--- |
@@ -117,22 +202,21 @@ Para asegurar la precisión en GMT-3, el proyecto debe tener configurado:
 | PG 05 | Post Venta y Soporte Técnico |
 | IT 01 | Manual Técnico de Administración AppSheet |
 
-## 8. REGISTROS ASOCIADOS (EVIDENCIA OPERATIVA)
+## 9. REGISTROS ASOCIADOS (EVIDENCIA OPERATIVA)
 
-| Código | Nombre |
-| :--- | :--- |
-| RPG 02 02 | Objetivos e Indicadores |
-| RPG 05 01 | Registro de Actividades de Soporte |
-| RPG 05 02 | Listado de Instructivos de Soporte |
-| RPG 05 03 | Pedido de Repuestos |
-| RPG 05 04 | Envío de Clientes hacia Corvus |
-| RPP 05 05 01 | Conectividades |
+| Código | Nombre | Relación |
+| :--- | :--- | :--- |
+| RPG 02 02 | Objetivos e Indicadores | KPIs de cobranza |
+| RPG 05 01 | Registro de Actividades de Soporte | Gestión operativa |
+| RPP 05 05 01 | Conectividades | Fuente de datos de los scripts |
+| — | Histórico Cobranzas (Google Sheet) | Destino del snapshot diario |
 
-## 9. HISTORIAL DE CAMBIOS
+## 10. HISTORIAL DE CAMBIOS
 
 | Rev. | Fecha | Descripción | Responsable |
 | :--- | :--- | :--- | :--- |
 | 00 | 05/01/2026 | Emisión inicial. Documentación de automatismos de Cronograma y Cobranzas. | RSGC |
 | 01 | 12/01/2026 | Re-codificación a IT 03 e incorporación de la sección de Documentos Asociados. | RSGC |
-| 02 | 12/01/2026 | **Estandarización SGC:** Desglose de documentos de referencia y registros asociados para máxima trazabilidad. | RSGC |
+| 02 | 12/01/2026 | Estandarización SGC: desglose de documentos de referencia y registros asociados. | RSGC |
 | 03 | 13/01/2026 | Corrección de formato de encabezados. | RSGC |
+| 04 | 05/03/2026 | Corrección de contactos (NICO→NICOLAS, email Mariano, incorporación MILI); documentación de script Snapshot Histórico (4.3); mapeo de columnas (4.4); sección de activadores (7); exclusión de MARTIN del monitor individual. | RSGC |
